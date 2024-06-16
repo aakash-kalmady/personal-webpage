@@ -1,32 +1,42 @@
-body {
-  background-color: #9766ea;
-  float: inline-end;
-}
+
 
 img {
     width: 100px;
     border-radius: 50px;
   }
 
-  .main {
+#summary {
+    position: fixed;
     font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: black;
-    text-align: center;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: left;
+    margin-right: 75%;
+    margin-top: 10%;
   }
 
-  .username {
+  h1 {
     font-family: Arial, sans-serif;
-    font-size: 12px;
-    color: #333;
+    font-size: 20px;
+    color: whitesmoke;
   }
 
   ul {
+    position: fixed;
+    left: 0;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #myVideo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    max-height: 100%;
   }
   
   li {
@@ -37,7 +47,7 @@ img {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 30px;
     text-decoration: none;
   }
   
