@@ -23,26 +23,31 @@ img {
   .about {
     position: relative;
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     font-family: "PT Sans", Calibri, Tahoma, sans-serif;
     font-size: 16px;
     color: whitesmoke;
   }
 
   .history {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: "PT Sans", Calibri, Tahoma, sans-serif;
     position: relative;
     text-align: center;
     color: whitesmoke;
   }
 
   .portfolio {
+    font-family: "PT Sans", Calibri, Tahoma, sans-serif;
     position: relative;
     text-align: center;
     color: whitesmoke;
   }
 
   .contact {
+    font-family: "PT Sans", Calibri, Tahoma, sans-serif;
     position: relative;
     text-align: center;
     color: whitesmoke;
@@ -82,7 +87,6 @@ img {
     position:fixed;
     left: 0;
     top: 0;
-    max-width: 100%;
   }
   
   .navbar li {
@@ -90,6 +94,7 @@ img {
   }
   
   .navbar li a {
+    font-family: "PT Sans", Calibri, Tahoma, sans-serif;
     display: block;
     color: white;
     text-align: center;
