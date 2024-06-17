@@ -1,57 +1,104 @@
-
+body{
+  background-color: #061123;
+}
 
 img {
-    width: 100px;
-    border-radius: 50px;
+    width: 60px;
+    border-radius: 30px;
   }
 
-#summary {
-    position: fixed;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: whitesmoke;
-    text-align: left;
-    margin-right: 75%;
-    margin-top: 10%;
-  }
 
-  h1 {
+.upper-icon {
+  float: left;
+}
+  .home {
+    position: relative;
+    text-align: center;
     font-family: Arial, sans-serif;
     font-size: 20px;
+    color: 
+    whitesmoke;
+  }
+
+  .about {
+    position: relative;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+    font-size: 16px;
     color: whitesmoke;
   }
 
-  ul {
-    position: fixed;
-    left: 0;
+  .history {
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  .portfolio {
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  .contact {
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  .navbar {
+    position: relative;
     list-style-type: none;
-    margin: 0;
+    margin-left: 70px;
     padding: 0;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .contact-menu {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .contact-menu li {
+    float:center;
+  }
+
+  .contact-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 40px;
   }
 
   #myVideo {
-    position: fixed;
+    position:fixed;
     left: 0;
     top: 0;
     max-width: 100%;
-    max-height: 100%;
   }
   
-  li {
-    float: left;
+  .navbar li {
+    float: right;
   }
   
-  li a {
+  .navbar li a {
     display: block;
     color: white;
     text-align: center;
     padding: 15px 30px;
     text-decoration: none;
+    border-radius: 50px;
   }
   
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
+  .navbar li a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
   }
