@@ -95,6 +95,7 @@ img {
   
   .navbar li a {
     font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+    font-weight: bold;
     display: block;
     color: white;
     text-align: center;
