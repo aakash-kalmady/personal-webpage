@@ -2,9 +2,18 @@ body{
   background-color: #061123;
 }
 
-img {
+.home img {
+  width: 60px;
+  border-radius: 30px;
+}
+.contact-menu img {
     width: 60px;
     border-radius: 30px;
+  }
+
+  .about img {
+    width: 400px;
+    border-radius: 20px;
   }
 
 
