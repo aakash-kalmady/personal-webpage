@@ -83,8 +83,9 @@ img {
     border-radius: 40px;
   }
 
-  #myVideo {
+  #background {
     position:fixed;
+    filter: brightness(50%);
     left: 0;
     top: 0;
   }
