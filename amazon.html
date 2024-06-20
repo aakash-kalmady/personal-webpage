@@ -1,42 +1,47 @@
 <style>
   .add-button {
-    height: 30px;
-    width: 110px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 25px;
+    padding-left: 25px;
     border-radius: 15px;
     margin-right: 10px;
     background-color: rgb(255, 216, 20);
     border: none;
     cursor: pointer;
     transition: opacity 0.15s, box-shadow 0.15s;
+    vertical-align: top;
   }
 
   .buy-button {
-    width: 120px;
-    height: 30px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     border-radius: 15px;
     background-color: rgb(255, 164, 28);
     border: none;
     cursor: pointer;
-    transition: opacity 0.15s, color 0.15;
+    transition: opacity 0.15s, box-shadow 0.15;
+    vertical-align: top;
   }
 
   .buy-button:hover {
-    background-color: black;
-    color: rgb(255, 164, 28);
     opacity: 0.8;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   }
 
   .buy-button:active {
     opacity: 0.5;
   }
 
-  .add-button:active {
-    opacity: 0.5;
-  }
-
   .add-button:hover {
     opacity: 0.8;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .add-button:active {
+    opacity: 0.1;
   }
 
   a {
