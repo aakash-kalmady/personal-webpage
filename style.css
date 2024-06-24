@@ -1,5 +1,5 @@
 body{
-  background-color: #061123;
+  background-color: #3C66AF;
 }
 
 .home img {
@@ -68,7 +68,7 @@ body{
     margin-left: 70px;
     padding: 0;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0);
+    background: #223843;
   }
 
   .contact-menu {
