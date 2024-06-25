@@ -68,7 +68,7 @@ body{
     margin-left: 70px;
     padding: 0;
     overflow: hidden;
-    background: #223843;
+    background: rgba(0,0,0,0);
   }
 
   .contact-menu {
