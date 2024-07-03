@@ -4,6 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        height: 50px;
+      }
+
+      .left-section {
+        width: 100px;
+        background-color: lightpink;
+      }
+
+      .right-section {
+        width: 200px;
+        background-color: lightblue;
+      }
+      .row2 {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="left-section"></div>
+      <div class="right-section">
+        <div>row1</div>
+        <div class="row2">
+          <div style="background-color: black; color: white">row2</div>
+          <div style="background-color: black; color: white">row2</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
