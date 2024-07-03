@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        font-family: Arial;
+        font-size: 15px;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+      }
+
+      .profile-picture {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        object-fit: cover;
+      }
+
+      .video {
+        cursor: pointer;
+        margin-top: 15px;
+        display: flex;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 15px;
+        border-color: rgb(213, 213, 213);
+        background-color: white;
+      }
+      .thumbnail {
+        width: 150px;
+        background-color: rgb(213, 213, 213);
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+
+      .video-info {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        text-align: left;
+      }
+      .tweet {
+        margin-left: 10px;
+        width: 320px;
+      }
+
+      .description {
+        margin-top: 7px;
+        line-height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img class="profile-picture" src="/images/headshot.JPEG" alt="aakash" />
+      </div>
+      <div class="tweet">
+        <div class="tweet-info">
+          <p class="handle" style="font-weight: bold">
+            aakash.kalmady
+            <span style="color: gray; font-weight: normal">@aakashkalmady</span>
+          </p>
+          <p class="description">
+            What is backend web development? A complete overview. New video is
+            up!
+          </p>
+        </div>
+        <div class="video">
+          <div class="thumbnail"></div>
+          <div class="video-info">
+            <p style="color: gray">youtube.com</p>
+            <p>Backend web development - a complete overview (2021)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
