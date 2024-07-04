@@ -1,12 +1,13 @@
 body {
-    margin: 0;
-    padding-top: 80px;
-    padding-left: 100px;
-    background-color: rgb(237, 237, 237);
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(240, 240, 240);
 }
 
 p {
-    font-family: Roboto, Arial;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+  font-family: Roboto, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
