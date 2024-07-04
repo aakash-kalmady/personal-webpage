@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 3000px;
+      }
+      .contianer {
+        position: inline-block;
+      }
+      .thumbnail {
+        position: relative;
+        width: 550px;
+      }
+      .sale-icon {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        font-family: Arial;
+        font-size: 14px;
+        padding: 4px;
+      }
+
+      .add-section {
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 200px;
+        background-color: rgba(207, 207, 207, 0.9);
+        z-index: 100;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn {
+        font-family: Arial;
+        background-color: white;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 2px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: rgba(255, 255, 255, 0.482);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="thumbnail">
+        <img
+          class="clothing-image"
+          src="https://i4.cloudfable.net/styles/550x550/576.241/Black/nice-until-roadhouse-dalton-movie-action-cool-mens-t-shirt-back-20240202025914-cv1hmice-s4.jpg"
+          alt="clothing-image"
+        />
+        <div class="sale-icon">20% OFF</div>
+        <div class="add-section">
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
