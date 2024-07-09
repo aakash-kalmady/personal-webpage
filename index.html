@@ -8,140 +8,14 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="/images/logo.png" />
-    <meta name="theme-color" content="#0B132B" />
+    <meta name="theme-color" content="rgba(0,0,0,0)" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/dock.css" />
+    <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/sidebar.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
     <title>Aakash's Webpage</title>
-    <style>
-      body {
-        display: flex;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 65px;
-        justify-content: center;
-        align-items: center;
-        margin: 0 0 65px 65px;
-        font-family: PT Sans, Arial;
-      }
-
-      .intro {
-        width: 900px;
-        text-align: left;
-        position: relative;
-        color: white;
-        font-weight: 700;
-        font-size: 35px;
-      }
-
-      .intro p {
-        margin: 0;
-      }
-      .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 50px;
-        width: 65px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-      }
-
-      .top-section img {
-        width: 40px;
-        height: 40px;
-        border-radius: 25px;
-        object-fit: cover;
-      }
-
-      .top-section {
-        margin-top: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .dock {
-        position: fixed;
-        display: flex;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 65px;
-        background-color: rgb(28, 28, 28);
-      }
-
-      .background-video {
-        filter: brightness(50%);
-        position: fixed;
-        left: 0;
-        top: 0;
-      }
-
-      .bottom-section {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 70px;
-      }
-
-      .bottom-section a {
-        border: none;
-        margin-top: 15px;
-        border-radius: 1px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25px;
-        height: 25px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: rgb(81, 81, 81);
-        filter: brightness(60%);
-        transition: border-radius 0.3s, filter 0.6s;
-      }
-
-      .bottom-section a:hover {
-        border-radius: 13px;
-        filter: brightness(100%);
-      }
-
-      .bottom-section a img {
-        height: 15px;
-      }
-
-      .share-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 65px;
-        background-color: rgb(237, 181, 0);
-      }
-
-      .hamburger-menu-container img {
-        width: 30px;
-        margin-bottom: 10px;
-      }
-
-      .hamburger-menu-container {
-        display: flex;
-        flex-direction: column;
-        filter: brightness(60%);
-        font-size: 12px;
-        margin-top: 20px;
-        transition: filter 0.3s;
-      }
-
-      .hamburger-menu-container:hover {
-        filter: brightness(100%);
-        cursor: pointer;
-      }
-    </style>
   </head>
   <body>
     <video autoplay muted loop class="background-video">

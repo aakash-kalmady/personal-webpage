@@ -1,0 +1,19 @@
+.background-video {
+  filter: brightness(50%);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.intro {
+  width: 900px;
+  text-align: left;
+  position: relative;
+  color: white;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.intro p {
+  margin: 0;
+}

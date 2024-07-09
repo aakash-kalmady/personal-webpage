@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 65px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 65px 65px;
+  font-family: PT Sans, Arial;
+}
