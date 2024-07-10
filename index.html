@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="/styles/home.css" />
     <link rel="stylesheet" href="/styles/menu.css" />
     <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
     <title>Aakash's Webpage</title>
   </head>
   <body>
     <video autoplay muted loop class="background-video">
-      <source src="/videos/background1.mp4" type="video/mp4" />
+      <source src="/videos/background.mp4" type="video/mp4" />
     </video>
-
     <div id="sidebar" class="sidebar">
       <div class="top-section">
         <a href="index.html"><img src="/images/Aakash.jpeg" alt="" /></a>
@@ -59,11 +59,15 @@
     <div id="menu" class="menu">MENU</div>
 
     <nav id="navbar" class="navbar-container">
+      <div class="signature-container">
+        <img class="signature" src="/images/signature.png" alt="" />
+      </div>
       <div class="navbar">
-        <a href="">HOME</a>
-        <a href="#about"><span></span>ABOUT</a>
-        <a href="#portfolio"><span></span>PORTFOLIO</a>
-        <a href="#gallery"><span></span>GALLERY</a>
+        <a onclick="scrollToHome()">HOME</a>
+        <a onclick="scrollToAbout()">ABOUT</a>
+        <a onclick="scrollToPortfolio()">PORTFOLIO</a>
+        <a onclick="scrollToSkills()">SKILLS</a>
+        <a onclick="scrollToGallery()">GALLERY</a>
       </div>
     </nav>
 
@@ -89,7 +93,16 @@
       <div class="sidebar-background"></div>
       <div id="about">About Me</div>
       <div id="portfolio">Portfolio</div>
-      <div id="gallery">Gallery</div>
+      <div id="skills">Skills</div>
+      <div id="gallery">
+        <div class="picture-grid">
+          <img src="/images/headshot.JPEG" alt="" />
+          <img src="/images/headshot.JPEG" alt="" />
+          <img src="/images/headshot.JPEG" alt="" />
+          <img src="/images/headshot.JPEG" alt="" />
+          <img src="/images/headshot.JPEG" alt="" />
+        </div>
+      </div>
       <div id="contact">Contact</div>
     </main>
     <script src="/main.js"></script>

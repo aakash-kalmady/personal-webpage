@@ -5,10 +5,8 @@ main {
   left: 0px;
   padding-left: 65px;
   height: 3000px;
-}
-
-main div {
-  padding-top: 65px;
+  background-color: rgb(54, 54, 54);
+  color: white;
 }
 
 .sidebar-background {

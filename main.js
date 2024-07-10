@@ -3,6 +3,12 @@ let menu = document.getElementById("menu");
 let sidebar = document.getElementById("sidebar");
 let navbar = document.getElementById("navbar");
 
+//section elements
+let about = document.getElementById("about");
+let portfolio = document.getElementById("portfolio");
+let skills = document.getElementById("skills");
+let gallery = document.getElementById("gallery");
+
 function toggleMenu() {
   menu.classList.toggle("menu-toggled");
   sidebar.classList.toggle("sidebar-toggled");
@@ -18,3 +24,25 @@ window.addEventListener("scroll", () => {
     navbar.className = "navbar-container";
   }
 });
+
+function scrollToHome() {
+  window.scroll({
+    top: 0,
+  });
+}
+
+function scrollToAbout() {
+  about.scrollIntoView();
+}
+
+function scrollToPortfolio() {
+  portfolio.scrollIntoView();
+}
+
+function scrollToSkills() {
+  skills.scrollIntoView();
+}
+
+function scrollToGallery() {
+  gallery.scrollIntoView();
+}
