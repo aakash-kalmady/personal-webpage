@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/sidebar.css" />
     <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/menu.css" />
     <title>Aakash's Webpage</title>
   </head>
   <body>
@@ -22,35 +23,38 @@
       <source src="/videos/background1.mp4" type="video/mp4" />
     </video>
 
-    <div class="sidebar">
+    <div id="sidebar" class="sidebar">
       <div class="top-section">
         <a href="index.html"><img src="/images/Aakash.jpeg" alt="" /></a>
-        <div class="hamburger-menu-container">
+        <div id="ham-menu" class="ham-menu">
           <img src="/icons/hamburger.svg" alt="Hamburger-Menu" />
           MENU
         </div>
       </div>
       <div class="bottom-section">
-        <a href="https://github.com/aakash-kalmady"
-          ><img src="/icons/github.svg" alt="GitHub"
-        /></a>
-        <a href="https://www.instagram.com/aakash.kalmady/"
-          ><img src="/icons/instagram.svg" alt="Instagram"
-        /></a>
-        <a href="https://www.linkedin.com/in/aakashkalmady/"
-          ><img src="/icons/linkedin.svg" alt="LinedinIn"
-        /></a>
-        <a href="https://www.youtube.com/channel/UC1GZjEyQfe7Kqa3HolKkVTQ"
-          ><img src="/icons/youtube.svg" alt="YouTube"
-        /></a>
+        <div class="socials">
+          <a href="https://github.com/aakash-kalmady"
+            ><img src="/icons/github.svg" alt="GitHub"
+          /></a>
+          <a href="https://www.instagram.com/aakash.kalmady/"
+            ><img src="/icons/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="https://www.linkedin.com/in/aakashkalmady/"
+            ><img src="/icons/linkedin.svg" alt="LinedinIn"
+          /></a>
+          <a href="https://www.youtube.com/channel/UC1GZjEyQfe7Kqa3HolKkVTQ"
+            ><img src="/icons/youtube.svg" alt="YouTube"
+          /></a>
+        </div>
+        <div class="share-container">
+          <a href=""><img src="/icons/share.svg" alt="Share" /></a>
+        </div>
       </div>
     </div>
 
-    <div class="dock">
-      <div class="share-container">
-        <a href=""><img src="/icons/share.svg" alt="Share" /></a>
-      </div>
-    </div>
+    <div id="menu" class="menu">MENU</div>
+
+    <div class="dock"></div>
     <div class="intro">
       <p>Hey there!</p>
       <p>I'm Aakash Kalmady</p>
@@ -58,5 +62,6 @@
         Student <span style="color: rgb(237, 181, 0)">Software Engineer</span>
       </p>
     </div>
+    <script src="/main.js"></script>
   </body>
 </html>

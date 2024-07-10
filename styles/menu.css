@@ -1,0 +1,18 @@
+.menu {
+  position: fixed;
+  left: 65px;
+  top: 0;
+  bottom: 0;
+  width: 415px;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  z-index: 100;
+  transition: 0.25s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-toggled {
+  left: -500px;
+}

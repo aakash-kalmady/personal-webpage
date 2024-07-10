@@ -1,17 +1,10 @@
 .dock {
   position: fixed;
   display: flex;
-  left: 0;
+  left: 65px;
   right: 0;
   bottom: 0;
   height: 65px;
   background-color: rgb(28, 28, 28);
-}
-
-.share-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 65px;
-  background-color: rgb(237, 181, 0);
+  z-index: 0;
 }
