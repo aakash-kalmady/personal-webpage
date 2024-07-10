@@ -1,0 +1,37 @@
+.navbar-container,
+.navbar-container-scrolled {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 65px;
+  background-color: rgb(28, 28, 28);
+  z-index: 100;
+  padding: 0 0 0 65px;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.navbar-container {
+  bottom: 0;
+}
+
+.navbar-container-scrolled {
+  position: fixed;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  border-left: 1px gray solid;
+  padding: 0 80px 0 40px;
+  margin-left: 190px;
+}
+.navbar a,
+.navbar-scrolled a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}

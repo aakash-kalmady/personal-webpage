@@ -8,14 +8,15 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="/images/logo.png" />
-    <meta name="theme-color" content="rgba(0,0,0,0)" />
+    <meta name="theme-color" content="rgb(0,0,0)" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/dock.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
     <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/sidebar.css" />
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
     <link rel="stylesheet" href="/styles/menu.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
     <title>Aakash's Webpage</title>
   </head>
   <body>
@@ -27,41 +28,69 @@
       <div class="top-section">
         <a href="index.html"><img src="/images/Aakash.jpeg" alt="" /></a>
         <div id="ham-menu" class="ham-menu">
-          <img src="/icons/hamburger.svg" alt="Hamburger-Menu" />
+          <span class="ham-menu-bar"></span><span class="ham-menu-bar"></span
+          ><span class="ham-menu-bar"></span>
           MENU
         </div>
       </div>
       <div class="bottom-section">
         <div class="socials">
-          <a href="https://github.com/aakash-kalmady"
+          <a href="https://github.com/aakash-kalmady" target="_blank"
             ><img src="/icons/github.svg" alt="GitHub"
           /></a>
-          <a href="https://www.instagram.com/aakash.kalmady/"
+          <a href="https://www.instagram.com/aakash.kalmady/" target="_blank"
             ><img src="/icons/instagram.svg" alt="Instagram"
           /></a>
-          <a href="https://www.linkedin.com/in/aakashkalmady/"
+          <a href="https://www.linkedin.com/in/aakashkalmady/" target="_blank"
             ><img src="/icons/linkedin.svg" alt="LinedinIn"
           /></a>
-          <a href="https://www.youtube.com/channel/UC1GZjEyQfe7Kqa3HolKkVTQ"
+          <a
+            href="https://www.youtube.com/channel/UC1GZjEyQfe7Kqa3HolKkVTQ"
+            target="_blank"
             ><img src="/icons/youtube.svg" alt="YouTube"
           /></a>
         </div>
-        <div class="share-container">
-          <a href=""><img src="/icons/share.svg" alt="Share" /></a>
+        <div class="mail-container">
+          <a href=""><img src="/icons/mail.png" alt="Mail" /></a>
         </div>
       </div>
     </div>
 
     <div id="menu" class="menu">MENU</div>
 
-    <div class="dock"></div>
-    <div class="intro">
-      <p>Hey there!</p>
-      <p>I'm Aakash Kalmady</p>
-      <p>
-        Student <span style="color: rgb(237, 181, 0)">Software Engineer</span>
-      </p>
+    <nav id="navbar" class="navbar-container">
+      <div class="navbar">
+        <a href="">HOME</a>
+        <a href="#about"><span></span>ABOUT</a>
+        <a href="#portfolio"><span></span>PORTFOLIO</a>
+        <a href="#gallery"><span></span>GALLERY</a>
+      </div>
+    </nav>
+
+    <div class="home">
+      <div class="blank-space"></div>
+      <div class="home-msg">
+        <p>Hey there!</p>
+        <p>I'm Aakash Kalmady</p>
+        <p>
+          Student <span style="color: rgb(237, 181, 0)">Software Engineer</span>
+        </p>
+      </div>
+      <div class="home-portrait">
+        <img
+          style="height: 80vh; border-radius: 5px"
+          src="/images/Aakash.jpeg"
+          alt="Me"
+        />
+      </div>
     </div>
+
+    <main>
+      <div class="sidebar-background"></div>
+      <div id="about">About Me</div>
+      <div id="portfolio">Portfolio</div>
+      <div id="gallery">Gallery</div>
+    </main>
     <script src="/main.js"></script>
   </body>
 </html>

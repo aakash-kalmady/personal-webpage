@@ -1,0 +1,39 @@
+.background-video {
+  filter: brightness(50%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.home {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 65px;
+  bottom: 65px;
+  display: flex;
+  align-items: center;
+}
+.blank-space {
+  flex: 0.5;
+}
+.home-msg {
+  flex: 1;
+  text-align: left;
+  color: white;
+  font-weight: 700;
+  font-size: 35px;
+  background-color: rgba(0, 0, 0, 0);
+  text-wrap: nowrap;
+}
+.home-portrait {
+  flex: 1;
+}
+
+.home p {
+  margin: 0;
+}

@@ -1,19 +1,21 @@
-.background-video {
-  filter: brightness(50%);
-  position: fixed;
+main {
+  position: absolute;
+  top: 100vh;
+  right: 0;
+  left: 0px;
+  padding-left: 65px;
+  height: 3000px;
+}
+
+main div {
+  padding-top: 65px;
+}
+
+.sidebar-background {
+  position: absolute;
   left: 0;
   top: 0;
-}
-
-.intro {
-  width: 900px;
-  text-align: left;
-  position: relative;
-  color: white;
-  font-weight: 700;
-  font-size: 35px;
-}
-
-.intro p {
-  margin: 0;
+  bottom: 0;
+  width: 65px;
+  background-color: rgb(42, 42, 42);
 }

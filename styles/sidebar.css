@@ -8,13 +8,15 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.5s;
   color: white;
   z-index: 200;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-toggled {
   background-color: rgb(35, 35, 35);
+  transition: background-color 0s;
 }
 .top-section img {
   width: 40px;
@@ -48,9 +50,47 @@
   color: white;
 }
 
+.ham-menu-bar {
+  height: 3px;
+  background-color: white;
+  margin-bottom: 5px;
+  transition: transform 0.25s, width 0.3s;
+}
+
+.ham-menu-bar:nth-child(1) {
+  width: 100%;
+}
+
+.ham-menu-bar:nth-child(2) {
+  width: 66%;
+}
+
+.ham-menu-bar:nth-child(3) {
+  width: 33%;
+}
+
+.ham-menu-toggled .ham-menu-bar:nth-child(1) {
+  width: 100%;
+  transform: translateY(8px) rotate(45deg);
+}
+
+.ham-menu-toggled .ham-menu-bar:nth-child(3) {
+  width: 100%;
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.ham-menu-toggled .ham-menu-bar:nth-child(2) {
+  opacity: 0;
+}
+
 .ham-menu:hover {
   filter: brightness(100%);
   cursor: pointer;
+}
+
+.ham-menu:hover .ham-menu-bar:nth-child(2),
+.ham-menu:hover .ham-menu-bar:nth-child(3) {
+  width: 100%;
 }
 
 .socials {
@@ -86,7 +126,7 @@
   height: 15px;
 }
 
-.share-container {
+.mail-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,6 +135,6 @@
   background-color: rgb(237, 181, 0);
 }
 
-.share-container a img {
+.mail-container a img {
   height: 25px;
 }
