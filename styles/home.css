@@ -17,23 +17,44 @@
   bottom: 65px;
   display: flex;
   align-items: center;
+  z-index: 100;
 }
 .blank-space {
-  flex: 0.5;
+  flex: 0.3;
 }
 .home-msg {
   flex: 1;
   text-align: left;
   color: white;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 45px;
   background-color: rgba(0, 0, 0, 0);
-  text-wrap: nowrap;
 }
 .home-portrait {
-  flex: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 65px;
+  width: 700px;
+  z-index: 0;
 }
 
-.home p {
+.home-portrait img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.home-msg p {
   margin: 0;
+}
+
+.home-msg a {
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(237, 181, 0);
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 300;
+  cursor: pointer;
 }
