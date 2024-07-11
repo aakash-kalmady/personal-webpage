@@ -9,7 +9,8 @@
   padding: 0 0 0 65px;
   color: white;
   display: flex;
-  transition: background-color 0.25s;
+  transition: background-color 0.5s;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .navbar-container {
@@ -20,6 +21,10 @@
   position: fixed;
   top: 0;
   background-color: rgba(28, 28, 28, 0.5);
+}
+
+.navbar-container-scrolled:hover {
+  background-color: rgb(28, 28, 28);
 }
 
 .signature {
@@ -48,15 +53,17 @@
 }
 .navbar a,
 .navbar-scrolled a {
-  filter: brightness(60%);
+  filter: brightness(50%);
   color: white;
   text-decoration: none;
   font-size: 12px;
   cursor: pointer;
-  transition: filter 0.25s;
+  transition: filter 0.5s;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .navbar a:hover,
 .navbar-scrolled a:hover {
   filter: brightness(100%);
+  color: rgb(237, 181, 0);
 }

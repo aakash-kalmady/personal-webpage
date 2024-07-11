@@ -21,16 +21,20 @@
 .top-section img {
   width: 40px;
   height: 40px;
-  border-radius: 25px;
+  border-radius: 20px;
   object-fit: cover;
 }
 
 .top-section {
-  margin-top: 15px;
+  margin-top: 12.5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+}
+
+.top-section a {
+  cursor: pointer;
 }
 
 .ham-menu img {
@@ -43,7 +47,7 @@
   flex-direction: column;
   filter: brightness(60%);
   font-size: 12px;
-  margin-top: 20px;
+  margin-top: 30px;
   transition: filter 0.3s;
   background-color: rgba(0, 0, 0, 0);
   border: none;
@@ -51,10 +55,11 @@
 }
 
 .ham-menu-bar {
-  height: 3px;
+  height: 2px;
   background-color: white;
   margin-bottom: 5px;
   transition: transform 0.25s, width 0.3s, opacity 0.2s;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .ham-menu-bar:nth-child(1) {
@@ -66,17 +71,17 @@
 }
 
 .ham-menu-bar:nth-child(3) {
-  width: 25%;
+  width: 0%;
 }
 
 .ham-menu-toggled .ham-menu-bar:nth-child(1) {
   width: 100%;
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
 }
 
 .ham-menu-toggled .ham-menu-bar:nth-child(3) {
   width: 100%;
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .ham-menu-toggled .ham-menu-bar:nth-child(2) {

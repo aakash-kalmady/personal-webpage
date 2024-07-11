@@ -27,9 +27,11 @@
     <video autoplay muted loop class="background-video">
       <source src="/videos/background.mp4" type="video/mp4" />
     </video>
-    <div id="sidebar" class="sidebar">
+    <aside id="sidebar" class="sidebar">
       <div class="top-section">
-        <a href="index.html"><img src="/photos/Aakash.jpeg" alt="" /></a>
+        <a onClick="window.location.reload();"
+          ><img src="/photos/Aakash.jpeg" alt="My Logo"
+        /></a>
         <div id="ham-menu" class="ham-menu">
           <span class="ham-menu-bar"></span><span class="ham-menu-bar"></span
           ><span class="ham-menu-bar"></span>
@@ -39,33 +41,33 @@
       <div class="bottom-section">
         <div class="socials">
           <a href="https://github.com/aakash-kalmady" target="_blank"
-            ><img src="/icons/github.svg" alt="GitHub"
+            ><img src="/icons/github.svg" alt="My GitHub"
           /></a>
           <a href="https://www.instagram.com/aakash.kalmady/" target="_blank"
-            ><img src="/icons/instagram.svg" alt="Instagram"
+            ><img src="/icons/instagram.svg" alt="My Instagram"
           /></a>
           <a href="https://www.linkedin.com/in/aakashkalmady/" target="_blank"
-            ><img src="/icons/linkedin.svg" alt="LinedinIn"
+            ><img src="/icons/linkedin.svg" alt="My LinkedIn"
           /></a>
           <a
             href="https://www.youtube.com/channel/UC1GZjEyQfe7Kqa3HolKkVTQ"
             target="_blank"
-            ><img src="/icons/youtube.svg" alt="YouTube"
+            ><img src="/icons/youtube.svg" alt="My YouTube"
           /></a>
         </div>
         <div class="mail-container">
           <a href="mailto:arkalmady@gmail.com?subject=Contacting From Website"
-            ><img src="/icons/mail.png" alt="Mail"
+            ><img src="/icons/mail.png" alt="Contact Me"
           /></a>
         </div>
       </div>
-    </div>
+    </aside>
 
     <div id="menu" class="menu">COMING SOON</div>
 
     <nav id="navbar" class="navbar-container">
       <div class="signature-container">
-        <img class="signature" src="/icons/signature.png" alt="" />
+        <img class="signature" src="/icons/signature.png" alt="Signature" />
       </div>
       <div class="navbar">
         <a onclick="scrollToHome()">HOME</a>
@@ -76,7 +78,7 @@
       </div>
     </nav>
 
-    <div class="home">
+    <header class="home">
       <div class="blank-space"></div>
       <div class="home-msg">
         <p>Hey there!</p>
@@ -87,7 +89,7 @@
         </p>
         <a onclick="scrollToAbout()"><span></span> LEARN ABOUT ME</a>
       </div>
-    </div>
+    </header>
 
     <div class="home-portrait">
       <img src="/photos/Aakash.jpeg" alt="Me" />
@@ -95,7 +97,7 @@
 
     <main>
       <div class="sidebar-background"></div>
-      <div id="about">
+      <section id="about">
         <h2>About Me</h2>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
         quaerat quia in molestiae, eaque, laborum est, officiis quae sunt quos
@@ -120,8 +122,8 @@
         Dicta pariatur consequatur asperiores dolor adipisci sequi magnam
         aliquam, esse itaque similique dolore, sed quam excepturi facilis cum
         culpa at commodi, possimus est? Quod?
-      </div>
-      <div id="portfolio">
+      </section>
+      <section id="portfolio">
         <h2>My Portfolio</h2>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
         distinctio hic suscipit quos neque sed dolorum? Voluptates itaque minima
@@ -146,14 +148,14 @@
         impedit tempora reiciendis temporibus aliquam, vitae beatae magnam
         asperiores minima ipsa, tempore sapiente aspernatur. Vero soluta itaque,
         suscipit sit iste placeat molestias.
-      </div>
-      <div id="skills">
+      </section>
+      <section id="skills">
         <h2>My Skills</h2>
         <li>Cool</li>
         <li>Funny</li>
         <li>Smart</li>
-      </div>
-      <div id="gallery">
+      </section>
+      <section id="gallery">
         <h2>Gallery</h2>
         <div class="picture-grid">
           <a href="/photos/image1.jpeg" download="image1"
@@ -175,8 +177,8 @@
             ><img src="/photos/image6.jpeg"
           /></a>
         </div>
-      </div>
-      <div id="contact"></div>
+      </section>
+      <section id="contact"></section>
     </main>
     <script src="/main.js"></script>
   </body>

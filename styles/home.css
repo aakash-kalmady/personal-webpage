@@ -42,6 +42,7 @@
 .home-portrait img {
   position: absolute;
   right: 0;
+  width: 425px;
   height: 100vh;
   object-fit: cover;
 }
@@ -58,4 +59,9 @@
   font-size: 12px;
   font-weight: 300;
   cursor: pointer;
+  transition: filter 0.5s;
+}
+
+.home-msg a:hover {
+  filter: brightness(70%);
 }
