@@ -23,27 +23,30 @@
 }
 
 .signature {
-  width: 95%;
-  height: 70%;
-  object-fit: stretch;
+  width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+  margin-left: -20px;
 }
 
 .signature-container {
-  width: 180px;
+  max-width: 180px;
+  min-width: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .navbar {
   display: flex;
-  width: 0;
+  min-width: 300px;
+  max-width: 600px;
   flex: 1;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
   height: 65px;
   border-left: 1px gray solid;
   padding: 0 80px 0 40px;
-  flex-shrink: 0;
 }
 .navbar a,
 .navbar-scrolled a {
@@ -52,7 +55,6 @@
   text-decoration: none;
   font-size: 12px;
   cursor: pointer;
-  margin-right: 120px;
   transition: filter 0.25s;
 }
 

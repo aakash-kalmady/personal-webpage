@@ -7,4 +7,9 @@
 
 body {
   margin: 0 0 0 65px;
+  background-color: rgb(27, 27, 27);
+}
+
+h2 {
+  margin-bottom: 10px;
 }
