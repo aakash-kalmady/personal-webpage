@@ -40,7 +40,8 @@
 }
 
 .home-portrait img {
-  width: 100%;
+  position: absolute;
+  right: 0;
   height: 100vh;
   object-fit: cover;
 }
