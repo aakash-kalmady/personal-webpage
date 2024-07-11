@@ -48,8 +48,8 @@ function scrollToGallery() {
 }
 
 var i = 0;
-let mission = "Software Developer"; /* The text */
-var speed = 80; /* The speed/duration of the effect in milliseconds */
+let mission = "Developer"; /* The text */
+var speed = 150; /* The speed/duration of the effect in milliseconds */
 
 function typeMission() {
   if (i < mission.length) {

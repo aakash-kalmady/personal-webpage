@@ -31,14 +31,19 @@
   background-color: rgba(0, 0, 0, 0);
 }
 .home-portrait {
+  position: relative;
+  min-width: 300px;
   flex: 1;
-  min-width: 400px;
   flex-shrink: 0;
   height: 100%;
-  background-color: lightblue;
+  background-color: rgb(28, 28, 28);
 }
 
 .home-portrait img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
   height: 100%;
   width: 100%;
   object-fit: cover;
