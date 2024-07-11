@@ -46,3 +46,17 @@ function scrollToSkills() {
 function scrollToGallery() {
   gallery.scrollIntoView();
 }
+
+var i = 0;
+let mission = "Software Developer"; /* The text */
+var speed = 80; /* The speed/duration of the effect in milliseconds */
+
+function typeMission() {
+  if (i < mission.length) {
+    document.getElementById("mission").innerHTML += mission.charAt(i);
+    i++;
+    setTimeout(typeMission, speed);
+  }
+}
+
+addEventListener("onload", typeMission());
