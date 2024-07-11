@@ -1,6 +1,6 @@
 .background-video {
   filter: brightness(50%);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   height: 100vh;
@@ -31,19 +31,16 @@
   background-color: rgba(0, 0, 0, 0);
 }
 .home-portrait {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 65px;
-  width: 700px;
-  z-index: 0;
+  flex: 1;
+  min-width: 400px;
+  flex-shrink: 0;
+  height: 100%;
+  background-color: lightblue;
 }
 
 .home-portrait img {
-  position: absolute;
-  right: 0;
-  width: 450px;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
