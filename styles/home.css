@@ -61,9 +61,10 @@
   font-size: 12px;
   font-weight: 300;
   cursor: pointer;
-  transition: filter 0.5s;
+  transition: ease 0.5s;
 }
 
 .home-msg a:hover {
-  filter: brightness(70%);
+  background-color: rgb(194, 148, 0);
+  padding: 15px 40px 15px 40px;
 }

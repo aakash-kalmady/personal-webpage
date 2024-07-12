@@ -2,6 +2,8 @@ let hamMenu = document.getElementById("ham-menu");
 let menu = document.getElementById("menu");
 let sidebar = document.getElementById("sidebar");
 let navbar = document.getElementById("navbar");
+let page = document.getElementById("main");
+let dock = document.getElementById("dock");
 
 //section elements
 let about = document.getElementById("about");
@@ -17,6 +19,7 @@ function toggleMenu() {
 
 hamMenu.addEventListener("click", toggleMenu);
 
+//function to shift nav bar depending on how far one has scrolled
 window.addEventListener("scroll", () => {
   if (window.scrollY > window.innerHeight - 65) {
     navbar.className = "navbar-container-scrolled";

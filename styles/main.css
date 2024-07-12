@@ -4,6 +4,7 @@ main {
   right: 0;
   left: 0px;
   padding-left: 65px;
+  padding-bottom: 65px;
   background-color: rgb(40, 40, 40);
   color: white;
   z-index: 0;
