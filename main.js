@@ -11,9 +11,6 @@ let portfolio = document.getElementById("portfolio");
 let skills = document.getElementById("skills");
 let gallery = document.getElementById("gallery");
 
-function zoom() {
-  document.body.style.zoom = "125%";
-}
 function toggleMenu() {
   menu.classList.toggle("menu-toggled");
   sidebar.classList.toggle("sidebar-toggled");
