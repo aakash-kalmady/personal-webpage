@@ -16,3 +16,9 @@
 .menu-toggled {
   left: 80px;
 }
+
+@media (max-width: 580px) {
+  .menu {
+    width: 90%;
+  }
+}
