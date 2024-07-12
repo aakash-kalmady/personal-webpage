@@ -17,7 +17,7 @@
   bottom: 65px;
   display: flex;
   align-items: center;
-  z-index: 100;
+  z-index: 50;
 }
 .blank-space {
   flex: 0.3;
