@@ -23,7 +23,7 @@ hamMenu.addEventListener("click", toggleMenu);
 
 //function to shift nav bar depending on how far one has scrolled
 window.addEventListener("scroll", () => {
-  if (window.scrollY > window.innerHeight - 65) {
+  if (window.scrollY > window.innerHeight - 80) {
     navbar.className = "navbar-container-scrolled";
   } else {
     navbar.className = "navbar-container";

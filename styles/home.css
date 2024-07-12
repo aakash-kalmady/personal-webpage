@@ -26,8 +26,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  left: 65px;
-  bottom: 65px;
+  left: 80px;
+  bottom: 80px;
   display: flex;
   align-items: center;
   z-index: 50;
@@ -71,7 +71,7 @@
   background-color: rgb(237, 181, 0);
   border: none;
   border-radius: 3px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   cursor: pointer;
   transition: ease 0.5s;

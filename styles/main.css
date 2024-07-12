@@ -3,8 +3,8 @@ main {
   top: 100vh;
   right: 0;
   left: 0px;
-  padding-left: 65px;
-  padding-bottom: 65px;
+  padding-left: 80px;
+  padding-bottom: 80px;
   background-color: rgb(40, 40, 40);
   color: white;
   z-index: 0;
@@ -15,6 +15,6 @@ main {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 65px;
+  width: 80px;
   background-color: rgb(32, 32, 32);
 }
