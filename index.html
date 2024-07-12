@@ -34,9 +34,11 @@
     <title>Aakash Kalmady</title>
   </head>
   <body>
-    <video autoplay muted loop class="background-video">
+    <div id="video-css" class="background-video-div"></div>
+    <video autoplay muted loop id="video" class="background-video">
       <source src="videos/background.mp4" type="video/mp4" />
     </video>
+
     <aside id="sidebar" class="sidebar">
       <div class="top-section">
         <a onClick="window.location.reload();"
@@ -94,7 +96,7 @@
     <header class="home">
       <div class="blank-space"></div>
       <div class="home-msg">
-        <p>Hi there!</p>
+        <p>Hey there!</p>
         <p>I'm Aakash Kalmady</p>
         <p>
           Software
