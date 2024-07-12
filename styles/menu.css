@@ -1,9 +1,9 @@
 .menu {
   position: fixed;
-  left: -415px;
+  left: -500px;
   top: 0;
   bottom: 0;
-  width: 415px;
+  width: 500px;
   background-color: rgb(26, 26, 26);
   color: white;
   z-index: 150;
