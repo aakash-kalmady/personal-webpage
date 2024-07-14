@@ -46,30 +46,11 @@
 }
 
 .spotify-grid {
-  display: grid;
-  row-gap: 20px;
-  column-gap: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .spotify-grid iframe {
-  width: 100%;
+  width: 40%;
   height: 60vh;
-}
-
-@media (max-width: 700px) {
-  .spotify-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 701px) and (max-width: 1000px) {
-  .spotify-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 1001px) {
-  .spotify-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
