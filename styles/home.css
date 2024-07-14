@@ -38,26 +38,27 @@
   text-align: left;
   color: white;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 5vh;
   background-color: rgba(0, 0, 0, 0);
+  flex-shrink: 0;
+  margin-right: 10%;
 }
 .home-portrait {
-  position: relative;
-  min-width: 300px;
-  flex: 1;
-  flex-shrink: 0;
-  height: 100%;
-  background-color: rgb(28, 28, 28);
-}
-
-.home-portrait img {
   position: absolute;
   right: 0;
   top: 0;
-  bottom: 0;
-  height: 100%;
+  bottom: 80px;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.home-portrait img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: 45%;
 }
 
 .home-msg p {
@@ -69,14 +70,15 @@
   background-color: rgb(237, 181, 0);
   border: none;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 30%;
   font-weight: bold;
   cursor: pointer;
   transition: ease 0.5s;
+  text-wrap: nowrap;
 }
 
 .home-msg a:hover {
   background-color: rgb(194, 148, 0);
   padding: 15px 40px 15px 40px;
-  font-size: 16px;
+  font-size: 45%;
 }

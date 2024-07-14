@@ -29,13 +29,12 @@
 
 .signature {
   width: 80%;
-  height: 70%;
   object-fit: fill;
   object-position: center;
 }
 
 .signature-container {
-  width: 225px;
+  width: 14%;
   display: flex;
   justify-content: center;
   align-items: center;
