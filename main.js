@@ -54,7 +54,7 @@ function scrollToGallery() {
 
 var i = 0;
 let mission = "Developer"; /* The text */
-var speed = 150; /* The speed/duration of the effect in milliseconds */
+var speed = 200; /* The speed/duration of the effect in milliseconds */
 
 function typeMission() {
   if (i < mission.length) {

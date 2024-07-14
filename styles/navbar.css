@@ -20,7 +20,7 @@
 .navbar-container-scrolled {
   position: fixed;
   top: 0;
-  background-color: rgba(28, 28, 28, 0.5);
+  background-color: rgba(28, 28, 28, 0.55);
 }
 
 .navbar-container-scrolled:hover {
@@ -43,7 +43,7 @@
 }
 .navbar {
   display: flex;
-  max-width: 715px;
+  max-width: 750px;
   flex: 1;
   justify-content: space-between;
   align-items: center;
@@ -62,18 +62,6 @@
   cursor: pointer;
   transition: ease 0.4s;
   margin-right: 10px;
-}
-
-@media (max-width: 600px) {
-  .navbar a,
-  .navbar-scrolled a {
-    font-size: 10px;
-    margin-right: 5px;
-  }
-
-  .navbar {
-    padding: 0 10px 0 10px;
-  }
 }
 
 .navbar a:hover,
