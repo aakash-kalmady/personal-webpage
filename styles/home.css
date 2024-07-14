@@ -62,7 +62,12 @@
     left: 80px;
     bottom: 0;
     width: 100%;
-    display: none;
+  }
+
+  .home-portrait img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .home-msg {
