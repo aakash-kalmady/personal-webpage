@@ -42,23 +42,38 @@
   background-color: rgba(0, 0, 0, 0);
   flex-shrink: 0;
   margin-right: 10%;
+  transition: color 0.35s;
 }
 .home-portrait {
   position: absolute;
   right: 0;
   top: 0;
   bottom: 80px;
-  width: 60vw;
+  width: 50vw;
   display: flex;
   align-items: center;
   justify-content: end;
+}
+
+@media (max-width: 650px) {
+  .home-portrait {
+    top: 0;
+    right: 0;
+    left: 80px;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .home-msg {
+    color: black;
+  }
 }
 
 .home-portrait img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 45%;
+  object-position: center;
 }
 
 .home-msg p {
@@ -73,8 +88,8 @@
   font-size: 30%;
   font-weight: bold;
   cursor: pointer;
-  transition: ease 0.5s;
   text-wrap: nowrap;
+  transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
 }
 
 .home-msg a:hover {

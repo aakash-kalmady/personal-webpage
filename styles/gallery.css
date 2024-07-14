@@ -49,7 +49,3 @@
   display: flex;
   justify-content: center;
 }
-
-.spotify-grid iframe {
-  width: 50%;
-}
