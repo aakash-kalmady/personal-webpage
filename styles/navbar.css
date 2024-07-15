@@ -54,6 +54,7 @@
 
 .navbar a,
 .navbar-scrolled a {
+  position: relative;
   filter: brightness(50%);
   color: white;
   text-decoration: none;
@@ -64,10 +65,29 @@
   margin-right: 10px;
 }
 
+.navbar span,
+.navbar-scrolled span {
+  position: absolute;
+  filter: brightness(100%);
+  left: 0;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: rgb(237, 181, 0);
+  transition: ease 0.5s;
+}
+
 .navbar a:hover,
 .navbar-scrolled a:hover {
   filter: brightness(100%);
   color: rgb(237, 181, 0);
+}
+
+.navbar a:hover span,
+.navbar-scrolled a:hover span {
+  width: 100%;
 }
 
 @media (max-width: 650px) {
