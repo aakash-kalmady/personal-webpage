@@ -29,6 +29,7 @@
 
 .signature {
   width: 80%;
+  max-height: 80px;
   object-fit: fill;
   object-position: center;
 }
