@@ -49,3 +49,25 @@
   display: flex;
   justify-content: center;
 }
+
+.image-container {
+  position: relative;
+}
+
+.image-container div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: ease 0.5s;
+}
+
+.image-container:hover div {
+  opacity: 1;
+}
