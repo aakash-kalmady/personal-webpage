@@ -5,6 +5,7 @@
   bottom: 0;
   width: 5.5%;
   min-width: 50px;
+  max-width: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -140,7 +141,7 @@
 }
 
 .socials a img {
-  width: 50%;
+  width: 45%;
 }
 
 .mail-container {

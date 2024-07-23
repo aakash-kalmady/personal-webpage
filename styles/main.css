@@ -3,8 +3,7 @@ main {
   top: 100%;
   right: 0;
   left: 0px;
-  padding-left: 5.5%;
-  padding-bottom: 20px;
+  padding-left: 4.5%;
   background-color: rgb(40, 40, 40);
   color: white;
   z-index: 0;
@@ -22,6 +21,7 @@ main {
   top: 0;
   bottom: 0;
   width: 5.5%;
+  max-width: 80px;
   min-width: 50px;
   background-color: rgb(32, 32, 32);
 }
