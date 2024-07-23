@@ -16,11 +16,6 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.sidebar-toggled {
-  background-color: rgb(35, 35, 35);
-  transition: background-color 0.15s;
-}
-
 .top-section img {
   width: 40px;
   height: 40px;
@@ -48,7 +43,7 @@
 .ham-menu {
   display: flex;
   flex-direction: column;
-  filter: brightness(80%);
+  filter: brightness(70%);
   font-size: 14px;
   margin-top: 40px;
   transition: filter 0.3s;
@@ -60,7 +55,7 @@
 .ham-menu-bar {
   height: 2px;
   background-color: white;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   transition: transform 0.25s, width 0.2s, opacity 0.2s;
   transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
@@ -79,12 +74,12 @@
 
 .ham-menu-toggled .ham-menu-bar:nth-child(1) {
   width: 100%;
-  transform: translateY(7px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .ham-menu-toggled .ham-menu-bar:nth-child(3) {
   width: 100%;
-  transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .ham-menu-toggled .ham-menu-bar:nth-child(2) {
@@ -121,7 +116,7 @@
   border-style: solid;
   border-width: 1px;
   border-color: rgb(81, 81, 81);
-  filter: brightness(80%);
+  filter: brightness(70%);
   transition: ease 0.3s;
 }
 

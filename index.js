@@ -1,5 +1,5 @@
 let hamMenu = document.getElementById("ham-menu");
-let menu = document.getElementById("menu");
+let menu = document.getElementById("menu-container");
 let sidebar = document.getElementById("sidebar");
 let navbar = document.getElementById("navbar");
 let page = document.getElementById("main");
@@ -12,8 +12,7 @@ let skills = document.getElementById("skills");
 let gallery = document.getElementById("gallery");
 
 function toggleMenu() {
-  menu.classList.toggle("menu-toggled");
-  sidebar.classList.toggle("sidebar-toggled");
+  menu.classList.toggle("menu-container-toggled");
   hamMenu.classList.toggle("ham-menu-toggled");
 }
 
