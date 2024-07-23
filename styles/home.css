@@ -20,6 +20,20 @@
   z-index: -2;
 }
 
+.background {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+}
+
+.background img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .home {
   position: absolute;
   top: 0;
@@ -79,7 +93,7 @@
 
 .home-msg {
   text-align: left;
-  color: white;
+  color: black;
   font-weight: 700;
   width: 50%;
   font-size: 5vh;
@@ -93,7 +107,7 @@
   right: 0;
   top: 0;
   bottom: 80px;
-  width: 47.5vw;
+  width: 40vw;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -120,8 +134,6 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 20px;
   }
 
   .home-msg {
@@ -130,7 +142,7 @@
   }
 
   .home-msg p {
-    color: black;
+    color: rgba(255, 255, 255, 0.676);
     transition: color 0.35s;
   }
 
@@ -141,11 +153,20 @@
   iframe {
     width: 100%;
   }
+
+  .sidebar .top-section img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ham-menu {
+    font-size: 12px;
+  }
 }
 
 .home-msg a {
   padding: 10px 20px 10px 20px;
-  background-color: rgb(237, 181, 0);
+  background-color: rgba(237, 181, 0, 0.5);
   color: black;
   border: none;
   border-radius: 3px;
@@ -157,7 +178,6 @@
 }
 
 .home-msg a:hover {
-  background-color: rgb(194, 148, 0);
   padding: 15px 40px 15px 40px;
   font-size: 45%;
 }

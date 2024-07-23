@@ -48,7 +48,7 @@
 .ham-menu {
   display: flex;
   flex-direction: column;
-  filter: brightness(60%);
+  filter: brightness(80%);
   font-size: 14px;
   margin-top: 40px;
   transition: filter 0.3s;
@@ -58,10 +58,10 @@
 }
 
 .ham-menu-bar {
-  height: 3px;
+  height: 2px;
   background-color: white;
   margin-bottom: 5px;
-  transition: transform 0.25s, width 0.3s, opacity 0.2s;
+  transition: transform 0.25s, width 0.2s, opacity 0.2s;
   transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
@@ -79,12 +79,12 @@
 
 .ham-menu-toggled .ham-menu-bar:nth-child(1) {
   width: 100%;
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
 }
 
 .ham-menu-toggled .ham-menu-bar:nth-child(3) {
   width: 100%;
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .ham-menu-toggled .ham-menu-bar:nth-child(2) {
@@ -121,15 +121,8 @@
   border-style: solid;
   border-width: 1px;
   border-color: rgb(81, 81, 81);
-  filter: brightness(60%);
+  filter: brightness(80%);
   transition: ease 0.3s;
-}
-
-@media (max-width: 650px) {
-  .ham-menu,
-  .socials a {
-    filter: brightness(80%);
-  }
 }
 
 .bottom-section {
