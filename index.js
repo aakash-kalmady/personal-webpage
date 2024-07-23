@@ -20,6 +20,7 @@ hamMenu.addEventListener("click", toggleMenu);
 
 var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 var ih = iOS ? screen.height : window.innerHeight;
+
 //function to shift nav bar depending on how far one has scrolled
 window.addEventListener("scroll", () => {
   if (window.scrollY > ih - 80) {
