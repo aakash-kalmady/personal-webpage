@@ -5,10 +5,10 @@
   align-items: center;
   left: 80px;
   right: 0;
-  bottom: 0px;
+  bottom: -80px;
   height: 80px;
-  background-color: rgba(27, 27, 27);
+  background-color: none;
   z-index: 200;
   font-size: 12px;
-  filter: brightness(70%);
+  filter: brightness(80%);
 }

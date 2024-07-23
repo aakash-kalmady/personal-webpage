@@ -88,7 +88,7 @@
   margin-right: 10%;
 }
 .home-portrait {
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   bottom: 80px;
