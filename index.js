@@ -4,8 +4,6 @@ let sidebar = document.getElementById("sidebar");
 let navbar = document.getElementById("navbar");
 let page = document.getElementById("main");
 let dock = document.getElementById("dock");
-let backgroundVideo = document.getElementById("video");
-let backgroundVideoCSS = document.getElementById("video-css");
 
 //section elements
 let about = document.getElementById("about");
@@ -64,16 +62,4 @@ function typeMission() {
   }
 }
 
-function toggleVideo() {
-  if (
-    !navigator.userAgent.includes("Chrome") &&
-    navigator.userAgent.includes("Safari")
-  ) {
-    backgroundVideo.style.display = "none";
-  } else {
-    backgroundVideoCSS.style.display = "none";
-  }
-}
-
 addEventListener("onload", typeMission());
-addEventListener("onload", toggleVideo());
