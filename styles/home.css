@@ -131,6 +131,10 @@
   .background-video-div {
     background: none;
   }
+
+  iframe {
+    width: 100%;
+  }
 }
 
 .home-msg a {

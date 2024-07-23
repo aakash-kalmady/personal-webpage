@@ -17,7 +17,7 @@
 
 .sidebar-toggled {
   background-color: rgb(35, 35, 35);
-  transition: background-color 0s;
+  transition: background-color 0.15s;
 }
 
 .top-section img {
@@ -123,6 +123,14 @@
   filter: brightness(60%);
   transition: ease 0.3s;
 }
+
+@media (max-width: 650px) {
+  .ham-menu,
+  .socials a {
+    filter: brightness(80%);
+  }
+}
+
 .bottom-section {
   width: 100%;
 }

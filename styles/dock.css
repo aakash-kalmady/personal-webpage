@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 80px;
+  left: 5.5%;
   right: 0;
   bottom: -80px;
   height: 80px;
@@ -11,4 +11,10 @@
   z-index: 200;
   font-size: 12px;
   filter: brightness(80%);
+}
+
+@media (max-width: 900px) {
+  .dock-container {
+    left: 50px;
+  }
 }
