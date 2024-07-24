@@ -30,3 +30,9 @@
 .menu-container-toggled {
   left: 0;
 }
+
+@media (max-width: 515px) {
+  .menu-container {
+    width: 100%;
+  }
+}

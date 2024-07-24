@@ -1,16 +1,12 @@
-.background {
+#background {
   position: fixed;
   left: 0;
-  bottom: 0;
   top: 0;
-  right: 0;
-}
-
-.background img {
   height: 100%;
-  width: 100%;
+  width: 60%;
   object-fit: cover;
-  filter: brightness(75%);
+  object-position: top;
+  filter: brightness(50%);
 }
 
 .home {
@@ -82,11 +78,11 @@
   text-wrap: nowrap;
 }
 .home-portrait {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
-  bottom: 80px;
-  width: 40vw;
+  bottom: 0;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -101,12 +97,7 @@
 
 @media (max-width: 650px) {
   .home-portrait {
-    top: 0;
-    right: 0;
-    bottom: 80px;
     width: 100%;
-    display: flex;
-    justify-content: end;
   }
 
   .home-portrait img {

@@ -3,7 +3,7 @@ let menu = document.getElementById("menu-container");
 let sidebar = document.getElementById("sidebar");
 let navbar = document.getElementById("navbar");
 let page = document.getElementById("main");
-let dock = document.getElementById("dock");
+let background = document.getElementById("background");
 
 //section elements
 let about = document.getElementById("about");
@@ -51,17 +51,3 @@ function scrollToSkills() {
 function scrollToGallery() {
   gallery.scrollIntoView();
 }
-
-var i = 0;
-let mission = "Developer"; /* The text */
-var speed = 200; /* The speed/duration of the effect in milliseconds */
-
-function typeMission() {
-  if (i < mission.length) {
-    document.getElementById("mission").innerHTML += mission.charAt(i);
-    i++;
-    setTimeout(typeMission, speed);
-  }
-}
-
-addEventListener("onload", typeMission());
