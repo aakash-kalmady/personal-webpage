@@ -56,8 +56,7 @@
   height: 2px;
   background-color: white;
   margin-bottom: 6px;
-  transition: transform 0.25s, width 0.2s, opacity 0.2s;
-  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: transform 0.25s, width 0.25s, opacity 0.15s;
 }
 
 .ham-menu-bar:nth-child(1) {
