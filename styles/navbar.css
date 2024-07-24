@@ -24,6 +24,9 @@
   bottom: 0;
 }
 
+@media (top: 100vh) {
+}
+
 .navbar-container-scrolled {
   position: fixed;
   top: 0;
