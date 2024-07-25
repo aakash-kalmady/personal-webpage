@@ -6,7 +6,7 @@
   width: 100dvw;
   object-fit: cover;
   object-position: top;
-  filter: brightness(50%);
+  filter: brightness(100%);
 }
 
 .home {
@@ -93,9 +93,14 @@
   max-width: 100%;
   object-fit: cover;
   object-position: right;
+  filter: brightness(80%);
 }
 
 @media (max-width: 650px) {
+  .home {
+    top: 10%;
+    align-items: start;
+  }
   .home-msg {
     width: 90%;
     font-size: 9vw;
@@ -120,7 +125,7 @@
   }
 }
 
-.home-msg a {
+.learn-btn {
   padding: 10px 20px 10px 20px;
   background-color: rgba(237, 182, 0, 0.8);
   color: black;
@@ -133,7 +138,32 @@
   transition: padding 0.5s, font-size 0.5s;
 }
 
-.home-msg a:hover {
+.learn-btn:hover {
   padding: 15px 40px 15px 40px;
   font-size: 45%;
+}
+
+.home-socials-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-shrink: none;
+  margin-top: 10px;
+}
+
+.home-socials-container a {
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  filter: brightness(80%);
+  transition: ease 0.3s;
+}
+
+.home-socials-container :hover {
+  filter: brightness(100%);
+}
+
+.home-socials-container a img {
+  width: 60%;
 }
