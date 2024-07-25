@@ -31,7 +31,7 @@
 }
 
 .picture-grid img:hover {
-  filter: brightness(50%);
+  filter: brightness(60%);
 }
 
 .spotify-grid {
@@ -49,10 +49,10 @@
   justify-content: center;
   align-items: center;
   left: 0;
-  bottom: 0;
+  bottom: 50%;
   right: 0;
-  height: 30%;
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 20%;
+  background-color: rgba(27, 27, 27, 0.9);
   opacity: 0;
   transition: ease 0.5s;
   pointer-events: none;
@@ -60,4 +60,5 @@
 
 .image-container:hover div {
   opacity: 1;
+  bottom: 0;
 }
