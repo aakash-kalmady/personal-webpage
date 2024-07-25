@@ -84,11 +84,11 @@
   left: 0;
   right: 0;
   width: 0;
-  bottom: -5px;
-  height: 4px;
+  bottom: -4px;
+  height: 2px;
   border-radius: 4px;
   background-color: rgb(237, 181, 0);
-  transition: ease 0.5s;
+  transition: ease 0.3s;
 }
 
 .navbar a:hover,
