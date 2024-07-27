@@ -18,7 +18,6 @@
   bottom: 80px;
   display: flex;
   align-items: center;
-  justify-content: center;
   z-index: 50;
 }
 
@@ -70,48 +69,30 @@
 .home-msg {
   text-align: left;
   color: whitesmoke;
-  font-weight: 700;
-  width: 50%;
-  font-size: 5vh;
+  font-weight: bold;
+  margin-left: 7%;
+  font-size: 3.5vw;
   background: none;
   flex-shrink: 0;
-  margin-right: 10%;
   text-wrap: nowrap;
 }
 .home-portrait {
-  position: fixed;
-  right: 0;
+  position: absolute;
+  right: 5%;
   top: 0;
-  left: 0;
+  left: 60%;
   bottom: 80px;
   display: flex;
-  align-items: end;
-  justify-content: end;
+  align-items: center;
 }
 
 .home-portrait img {
-  max-height: 80%;
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
-  object-position: right;
-  filter: brightness(80%);
+  border-radius: 20px;
 }
 
 @media (max-width: 650px) {
-  .home {
-    top: 10%;
-    align-items: start;
-  }
-  .home-msg {
-    width: 90%;
-    font-size: 9vw;
-  }
-
-  .home-msg p {
-    color: rgba(255, 255, 255, 0.676);
-    transition: color 0.35s;
-  }
-
   iframe {
     width: 100%;
   }
@@ -124,6 +105,23 @@
   .ham-menu {
     font-size: 12px;
   }
+
+  .home-portrait {
+    bottom: 80px;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+    justify-content: center;
+  }
+
+  .home {
+    align-items: start;
+    margin-top: 30%;
+  }
+
+  .home-msg {
+    font-size: 6vw;
+  }
 }
 
 .learn-btn {
@@ -132,15 +130,16 @@
   color: black;
   border: none;
   border-radius: 3px;
-  font-size: 30%;
+  font-size: 1.5vw;
   font-weight: bold;
   cursor: pointer;
   text-wrap: nowrap;
   transition: padding 0.5s, font-size 0.5s;
+  margin-top: 15px;
 }
 
 .learn-btn:hover {
-  padding: 15px 40px 15px 40px;
+  padding: 15px 30px 15px 30px;
   font-size: 45%;
 }
 
@@ -153,7 +152,7 @@
 }
 
 .home-socials-container a {
-  width: 75px;
+  width: 6vw;
   display: flex;
   align-items: center;
   justify-content: start;

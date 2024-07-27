@@ -13,10 +13,6 @@
       name="keywords"
       content="Aakash, Aakash Kalmady, Kalmady, aakashkalmady"
     />
-    <meta
-      name="description"
-      content="Aakash Kalmady's personal portfolio website."
-    />
     <meta name="author" content="Aakash Kalmady" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,7 +27,11 @@
     <link rel="stylesheet" href="styles/skills.css" />
     <link rel="stylesheet" href="styles/gallery.css" />
     <link rel="stylesheet" href="styles/dock.css" />
-    <title>Aakash Kalmady</title>
+    <title>Aakash Kalmady's Website</title>
+    <meta
+      name="description"
+      content="Aakash Kalmady's personal portfolio website. Learn more about me!"
+    />
   </head>
   <body>
     <img
@@ -102,10 +102,7 @@
       <div class="home-msg">
         <p>Hi there!</p>
         <p>I'm Aakash Kalmady</p>
-        <p>
-          Software
-          <span id="mission" style="color: rgb(237, 181, 0)">Developer</span>
-        </p>
+        <span id="element"> </span>
 
         <div class="home-socials-container">
           <a href="https://github.com/aakash-kalmady" target="_blank"
@@ -124,12 +121,12 @@
           /></a>
         </div>
         <a onclick="scrollToAbout()" class="learn-btn"
-          ><span></span> LEARN ABOUT ME</a
+          ><span></span> Learn about me</a
         >
       </div>
     </header>
     <div class="home-portrait">
-      <img src="images/headshot.png" alt="Me" loading="eager" />
+      <img src="images/headshot.JPEG" alt="Me" loading="eager" />
     </div>
 
     <main id="main">
@@ -254,5 +251,15 @@
       </div>
     </main>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          'Software <span style="color:rgb(237, 181, 0);">Developer</span>',
+        ],
+        typeSpeed: 50,
+        showCursor: true,
+      });
+    </script>
   </body>
 </html>
