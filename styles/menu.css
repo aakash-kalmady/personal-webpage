@@ -1,6 +1,6 @@
 .menu-container {
   position: fixed;
-  left: -550px;
+  left: -500px;
   top: 0;
   bottom: 0;
   width: 500px;
@@ -11,15 +11,13 @@
 }
 
 .menu-sidebar-background {
-  width: 6.5vw;
-  max-width: 80px;
-  min-width: 50px;
+  width: 80px;
   background-color: rgb(43, 43, 43);
   height: 100%;
 }
 
 .menu {
-  width: 100%;
+  flex: 1;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -29,10 +27,4 @@
 
 .menu-container-toggled {
   left: 0;
-}
-
-@media (max-width: 515px) {
-  .menu-container {
-    width: 100%;
-  }
 }

@@ -4,6 +4,7 @@ let sidebar = document.getElementById("sidebar");
 let navbar = document.getElementById("navbar");
 let page = document.getElementById("main");
 let background = document.getElementById("background");
+let scrollWheel = document.getElementById("scroll-wheel");
 
 //section elements
 let about = document.getElementById("about");
@@ -29,6 +30,16 @@ window.addEventListener("scroll", () => {
     navbar.className = "navbar-container";
   }
 });
+
+window.onload = scrollAnimation();
+
+function scrollAnimation() {
+  let i = 0;
+  for (i = 0; i < 1000; i++) {
+    scrollWheel.classList.toggle(".scroll-wheel-animated");
+    setTimeout(2000);
+  }
+}
 
 function scrollToHome() {
   window.scroll({

@@ -6,25 +6,15 @@
   height: 80px;
   background-color: rgb(28, 28, 28);
   z-index: 100;
-  padding: 0 0 0 4.5%;
+  padding: 0 0 0 80px;
   color: white;
   display: flex;
   transition: background-color 0.5s;
   transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-@media (max-width: 900px) {
-  .navbar-container,
-  .navbar-container-scrolled {
-    padding-left: 50px;
-  }
-}
-
 .navbar-container {
   bottom: 0;
-}
-
-@media (top: 100vh) {
 }
 
 .navbar-container-scrolled {
@@ -38,29 +28,25 @@
 }
 
 .signature {
-  width: 80%;
-  max-height: 80px;
+  width: 100%;
+  max-height: 60px;
   object-fit: fill;
   object-position: center;
   filter: brightness(50%);
 }
 
 .signature-container {
-  width: 14%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
-  border-right: 1px rgb(80, 80, 80) solid;
 }
 .navbar {
   display: flex;
-  max-width: 750px;
-  flex: 1;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0 80px 0 40px;
+  padding: 0 40px 0 40px;
   border-right: 1px rgb(80, 80, 80) solid;
 }
 
@@ -101,40 +87,43 @@
   width: 100%;
 }
 
-@media (max-width: 650px) {
-  .navbar {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-}
-
 .scroll-icon-container {
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
-  flex: 1;
+  min-width: 100px;
+  max-width: 200px;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  font-size: 0.5rem;
+  font-weight: bold;
+  border-right: 1px rgb(80, 80, 80) solid;
+  text-wrap: nowrap;
+  filter: brightness(60%);
 }
 
 .mouse-icon {
   border-radius: 10px;
-  height: 40px;
+  height: 30px;
   width: 20px;
   border: 2px white solid;
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: brightness(60%);
+  margin-right: 1vw;
+  flex-shrink: 0;
 }
 
-.scroll-wheel {
+#scroll-wheel {
   width: 4px;
   height: 8px;
-  background-color: white;
+  background-color: rgb(237, 181, 0);
   border-radius: 2px;
   transform: translateY(-6px);
   transition: ease 0.5s;
 }
 
-.mouse-icon:hover .scroll-wheel {
+.scroll-wheel-animated {
   transform: translateY(0);
 }
