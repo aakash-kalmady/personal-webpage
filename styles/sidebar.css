@@ -46,7 +46,7 @@
   transition: color 0.3s;
   background-color: rgba(0, 0, 0, 0);
   border: none;
-  color: rgba(255, 255, 255, 0.616);
+  color: gray;
   width: 85%;
 }
 

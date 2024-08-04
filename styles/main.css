@@ -10,9 +10,7 @@ main {
 }
 
 .sidebar-background {
-  width: 5.5%;
-  max-width: 80px;
-  min-width: 50px;
+  width: 80px;
   height: 100%;
   background-color: rgb(32, 32, 32);
 }

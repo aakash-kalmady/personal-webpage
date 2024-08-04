@@ -156,7 +156,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  cursor: initial;
+  cursor: default;
 }
 
 .home-socials-container a img:hover {
