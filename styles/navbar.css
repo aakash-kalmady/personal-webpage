@@ -88,8 +88,8 @@
 }
 
 .scroll-icon-container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
   display: flex;
   width: 20vw;
   justify-content: center;
@@ -118,10 +118,16 @@
   height: 8px;
   background-color: rgb(237, 181, 0);
   border-radius: 2px;
-  transform: translateY(-6px);
-  transition: ease 0.5s;
+  animation-name: scroll-animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 
-.scroll-icon-container:hover #scroll-wheel {
-  transform: translateY(4px);
+@keyframes scroll-animation {
+  0% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(4px);
+  }
 }
