@@ -21,57 +21,12 @@
   z-index: 50;
 }
 
-.home-404 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 80px;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 50;
-}
-
-.home-404-msg {
-  width: 50%;
-  height: 50%;
-  color: white;
-  font-weight: 700;
-  font-size: 5vh;
-  background: none;
-  flex-shrink: 0;
-  margin-right: 10%;
-  transition: color 0.35s;
-  text-align: left;
-}
-
-.home-404-msg a {
-  padding: 10px 20px 10px 20px;
-  background-color: rgb(237, 181, 0);
-  border: none;
-  border-radius: 3px;
-  font-size: 30%;
-  font-weight: bold;
-  cursor: pointer;
-  text-wrap: nowrap;
-  transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
-  text-decoration: none;
-  color: black;
-}
-
-.home-404-msg a:hover {
-  background-color: rgb(194, 148, 0);
-  padding: 15px 40px 15px 40px;
-  font-size: 45%;
-}
-
 .home-msg {
   text-align: left;
   color: whitesmoke;
   font-weight: bold;
   margin-left: 7%;
-  font-size: 3.5vw;
+  font-size: 3rem;
   background: none;
   flex-shrink: 0;
   text-wrap: nowrap;
@@ -95,15 +50,6 @@
 @media (max-width: 650px) {
   iframe {
     width: 100%;
-  }
-
-  .sidebar .top-section img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .ham-menu {
-    font-size: 12px;
   }
 
   .home-portrait {
