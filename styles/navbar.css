@@ -9,7 +9,6 @@
   padding: 0 0 0 80px;
   color: white;
   display: flex;
-  transition: background-color 0.5s;
   transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -20,11 +19,29 @@
 .navbar-container-scrolled {
   position: fixed;
   top: 0;
-  background-color: rgba(28, 28, 28, 0.4);
+  background-color: rgba(27, 27, 27, 0.4);
 }
 
-.navbar-container-scrolled:hover {
-  background-color: rgb(28, 28, 28);
+.navbar-container-scrolled:hover #scroll-icon-container,
+.navbar-container-scrolled:hover #signature-container {
+  background-color: rgb(20, 20, 20);
+}
+
+.navbar-container-scrolled:hover #navbar {
+  background-color: rgb(27, 27, 27);
+}
+
+.signature-container,
+.signature-container-scrolled {
+  display: flex;
+  width: 25vw;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s;
+}
+
+.signature-container {
+  background-color: rgb(20, 20, 20);
 }
 
 .signature {
@@ -37,13 +54,7 @@
   margin-left: 10px;
 }
 
-.signature-container {
-  display: flex;
-  width: 25vw;
-  justify-content: center;
-  align-items: center;
-}
-.navbar {
+#navbar {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -51,10 +62,11 @@
   height: 80px;
   padding: 0 20px 0 20px;
   border-right: 1px rgb(80, 80, 80) solid;
+  transition: background-color 0.5s;
 }
 
-.navbar a,
-.navbar-scrolled a {
+#navbar a,
+#navbar-scrolled a {
   position: relative;
   color: gray;
   text-decoration: none;
@@ -65,8 +77,8 @@
   margin-right: 10px;
 }
 
-.navbar span,
-.navbar-scrolled span {
+#navbar span,
+#navbar-scrolled span {
   position: absolute;
   left: 0;
   right: 0;
@@ -77,17 +89,18 @@
   transition: ease 0.3s;
 }
 
-.navbar a:hover,
-.navbar-scrolled a:hover {
+#navbar a:hover,
+#navbar-scrolled a:hover {
   color: rgb(237, 181, 0);
 }
 
-.navbar a:hover span,
-.navbar-scrolled a:hover span {
+#navbar a:hover span,
+#navbar-scrolled a:hover span {
   width: 100%;
 }
 
-.scroll-icon-container {
+.scroll-icon-container,
+.scroll-icon-container-scrolled {
   padding-left: 8px;
   padding-right: 8px;
   display: flex;
@@ -99,6 +112,16 @@
   border-right: 1px rgb(80, 80, 80) solid;
   color: gray;
   text-wrap: nowrap;
+  transition: background-color 0.5s;
+}
+
+.scroll-icon-container {
+  background-color: rgb(20, 20, 20);
+}
+
+.signature-container-scrolled,
+.scroll-icon-container-scrolled {
+  background-color: rgba(20, 20, 20, 0.3);
 }
 
 .mouse-icon {

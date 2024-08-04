@@ -1,7 +1,7 @@
 main {
   position: absolute;
   display: flex;
-  top: 100%;
+  top: 100vh;
   right: 0;
   left: 0px;
   background-color: rgb(40, 40, 40);

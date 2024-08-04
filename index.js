@@ -1,7 +1,9 @@
 let hamMenu = document.getElementById("ham-menu");
 let menu = document.getElementById("menu-container");
 let sidebar = document.getElementById("sidebar");
-let navbar = document.getElementById("navbar");
+let navbar = document.getElementById("navbar-container");
+let scrollSection = document.getElementById("scroll-icon-container");
+let signature = document.getElementById("signature-container");
 let page = document.getElementById("main");
 let background = document.getElementById("background");
 let scrollWheel = document.getElementById("scroll-wheel");
@@ -23,8 +25,12 @@ hamMenu.addEventListener("click", toggleMenu);
 window.addEventListener("scroll", () => {
   if (window.scrollY > window.innerHeight - 80) {
     navbar.className = "navbar-container-scrolled";
+    signature.className = "signature-container-scrolled";
+    scrollSection.className = "scroll-icon-container-scrolled";
   } else {
     navbar.className = "navbar-container";
+    signature.className = "signature-container";
+    scrollSection.className = "scroll-icon-container";
   }
 });
 
