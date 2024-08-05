@@ -9,7 +9,6 @@
   padding-left: 80px;
   color: white;
   display: flex;
-  transition: background-color 0.5s;
 }
 
 .navbar-container {
@@ -37,7 +36,7 @@
   width: 25vw;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.5s;
+  transition: background-color 0.25s;
 }
 
 .signature-container {
@@ -62,7 +61,7 @@
   height: 80px;
   padding: 0 20px 0 20px;
   border-right: 1px rgb(80, 80, 80) solid;
-  transition: background-color 0.5s;
+  transition: background-color 0.25s;
 }
 
 #navbar a,
@@ -111,7 +110,7 @@
   border-right: 1px rgb(80, 80, 80) solid;
   color: gray;
   text-wrap: nowrap;
-  transition: background-color 0.5s;
+  transition: background-color 0.25s;
 }
 
 .scroll-icon-container {
@@ -147,7 +146,10 @@
 
 @keyframes scroll-animation {
   0% {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
+  }
+  25% {
+    transform: translateY(-5px);
   }
   100% {
     transform: translateY(4px);

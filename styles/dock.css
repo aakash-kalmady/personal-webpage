@@ -1,15 +1,10 @@
 .dock-container {
-  position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
-  left: 0;
-  right: 0;
-  bottom: -80px;
+  justify-content: center;
   height: 80px;
   background-color: black;
-  z-index: 200;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: rgb(177, 177, 177);
-  font-weight: bold;
+  font-family: DM Sans, Arial, sans-serif;
 }
