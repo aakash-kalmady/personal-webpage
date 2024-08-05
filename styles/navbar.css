@@ -9,6 +9,7 @@
   padding-left: 80px;
   color: white;
   display: flex;
+  transition: background-color 0.25s;
 }
 
 .navbar-container {
