@@ -74,7 +74,6 @@
   font-weight: bold;
   cursor: pointer;
   transition: color 0.4s width 0.4s;
-  margin-right: 10px;
 }
 
 #navbar span,
@@ -159,5 +158,10 @@
   .navbar-container,
   .navbar-container-scrolled {
     padding-left: 50px;
+  }
+
+  #navbar {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
