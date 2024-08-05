@@ -4,17 +4,24 @@ main {
   top: 100%;
   right: 0;
   left: 0px;
-  background-color: rgb(40, 40, 40);
+  background: none;
   color: white;
   z-index: 0;
+  background-color: rgb(9, 13, 25);
 }
 
 .sidebar-background {
   width: 80px;
   height: 100%;
-  background-color: rgb(32, 32, 32);
+  z-index: 300;
 }
 
 .content {
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .sidebar-background {
+    width: 50px;
+  }
 }

@@ -6,7 +6,7 @@
   height: 80px;
   background-color: rgb(28, 28, 28);
   z-index: 100;
-  padding: 0 0 0 80px;
+  padding-left: 80px;
   color: white;
   display: flex;
   transition: background-color 0.5s;
@@ -138,7 +138,7 @@
 
 #scroll-wheel {
   width: 4px;
-  height: 8px;
+  height: 10px;
   background-color: rgb(237, 181, 0);
   border-radius: 2px;
   animation-name: scroll-animation;
@@ -152,5 +152,12 @@
   }
   100% {
     transform: translateY(4px);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-container,
+  .navbar-container-scrolled {
+    padding-left: 50px;
   }
 }

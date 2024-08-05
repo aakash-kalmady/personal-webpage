@@ -28,3 +28,9 @@
 .menu-container-toggled {
   left: 0;
 }
+
+@media (max-width: 600px) {
+  .menu-sidebar-background {
+    width: 50px;
+  }
+}

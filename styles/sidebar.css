@@ -184,3 +184,9 @@
   bottom: 80px;
   opacity: 1;
 }
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 50px;
+  }
+}
