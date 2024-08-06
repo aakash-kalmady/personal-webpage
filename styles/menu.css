@@ -34,3 +34,9 @@
     width: 50px;
   }
 }
+
+@media (max-width: 500px) {
+  .menu-container {
+    width: 100vw;
+  }
+}

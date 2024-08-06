@@ -74,13 +74,18 @@
 @media (max-width: 600px) {
   .home {
     left: 50px;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .home-msg {
     font-size: 4vw;
+    margin: 0;
+    margin-bottom: 5vh;
   }
 
   .home-portrait {
-    margin-left: 5vw;
+    width: 60vw;
+    margin: 0;
   }
 }
