@@ -41,7 +41,7 @@
 .home-portrait img {
   width: 100%;
   object-fit: cover;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 .home-socials-container {
@@ -93,7 +93,7 @@
   }
 
   .home-portrait {
-    width: 60vw;
+    width: 50vw;
     margin: 0;
   }
 }

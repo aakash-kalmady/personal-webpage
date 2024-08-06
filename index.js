@@ -37,7 +37,7 @@ window.addEventListener("scroll", () => {
   }
   var parallax = window.scrollY;
   background.style.top = -parallax * 0.15 + "px";
-  homeMenu.style.top = -parallax * 0.45 + "px";
+  homeMenu.style.top = -parallax * 0.7 + "px";
 });
 
 window.onload = scrollAnimation();
