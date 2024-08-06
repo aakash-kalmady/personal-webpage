@@ -1,4 +1,44 @@
 #about {
+  position: relative;
   padding: 30px;
   font-family: DM Sans, Arial, sans-serif;
+  font-size: min(2.5vw, 2rem);
+  text-align: center;
+}
+
+.about-top {
+  display: flex;
+}
+.about-desc {
+  margin-top: 5%;
+  margin-left: 3vw;
+}
+
+.about-portrait img {
+  width: 35vw;
+}
+
+.about-desc img {
+  width: 60%;
+}
+
+.youtube-previews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.youtube-previews iframe {
+  width: 100%;
+  height: 25vw;
+}
+
+#about p {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+  .youtube-previews {
+    grid-template-columns: 1fr;
+  }
 }

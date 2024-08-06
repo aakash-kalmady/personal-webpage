@@ -7,6 +7,7 @@ let signature = document.getElementById("signature-container");
 let page = document.getElementById("main");
 let background = document.getElementById("background");
 let scrollWheel = document.getElementById("scroll-wheel");
+let homeMenu = document.getElementById("home");
 
 //section elements
 let about = document.getElementById("about");
@@ -27,11 +28,16 @@ window.addEventListener("scroll", () => {
     navbar.className = "navbar-container-scrolled";
     signature.className = "signature-container-scrolled";
     scrollSection.className = "scroll-icon-container-scrolled";
+    homeMenu.style.display = "none";
   } else {
     navbar.className = "navbar-container";
     signature.className = "signature-container";
     scrollSection.className = "scroll-icon-container";
+    homeMenu.style.display = "flex";
   }
+  var parallax = window.scrollY;
+  background.style.top = -parallax * 0.15 + "px";
+  homeMenu.style.top = -parallax * 0.45 + "px";
 });
 
 window.onload = scrollAnimation();

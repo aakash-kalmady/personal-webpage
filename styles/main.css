@@ -8,21 +8,17 @@ main {
   color: white;
   z-index: 0;
   background-color: black;
-}
-
-.sidebar-background {
-  width: 80px;
-  height: 100%;
-  z-index: 300;
+  font-family: DM Sans, Arial, sans-serif;
 }
 
 .content {
+  margin-left: 80px;
   flex: 1;
   background-color: rgb(9, 13, 25);
 }
 
 @media (max-width: 600px) {
-  .sidebar-background {
-    width: 50px;
+  .content {
+    margin-left: 50px;
   }
 }
