@@ -10,7 +10,7 @@ let scrollWheel = document.getElementById("scroll-wheel");
 
 //section elements
 let about = document.getElementById("about");
-let portfolio = document.getElementById("portfolio");
+let experience = document.getElementById("experience");
 let skills = document.getElementById("skills");
 let gallery = document.getElementById("gallery");
 
@@ -54,8 +54,8 @@ function scrollToAbout() {
   about.scrollIntoView();
 }
 
-function scrollToPortfolio() {
-  portfolio.scrollIntoView();
+function scrollToExperience() {
+  experience.scrollIntoView();
 }
 
 function scrollToSkills() {

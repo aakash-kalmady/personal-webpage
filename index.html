@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
 
-    <link rel="icon" type="image/png" href="icons/logo.png" />
+    <link rel="icon" type="image/png" href="/assets/icons/logo.png" />
     <meta name="theme-color" content="rgb(20,20,20)" />
     <meta
       name="keywords"
@@ -26,17 +26,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Styles-->
-    <link rel="stylesheet" href="styles/navbar.css" />
-    <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/sidebar.css" />
-    <link rel="stylesheet" href="styles/home.css" />
-    <link rel="stylesheet" href="styles/menu.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/about.css" />
-    <link rel="stylesheet" href="styles/portfolio.css" />
-    <link rel="stylesheet" href="styles/skills.css" />
-    <link rel="stylesheet" href="styles/gallery.css" />
-    <link rel="stylesheet" href="styles/dock.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/sidebar.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/menu.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/styles/experience.css" />
+    <link rel="stylesheet" href="/styles/skills.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/dock.css" />
 
     <title>Aakash Kalmady's Website</title>
     <meta
@@ -48,14 +48,14 @@
     <img
       id="background"
       src="https://images.unsplash.com/photo-1662643500140-7c2fdf816dd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      src="images/background.png"
+      src="/assets/images/background.png"
       alt="background"
       loading="eager"
     />
     <aside id="sidebar" class="sidebar">
       <div class="top-section">
         <a onClick="window.location.reload();"
-          ><img src="icons/logo.png" alt="My Logo" loading="eager"
+          ><img src="/assets/icons/logo.png" alt="My Logo" loading="eager"
         /></a>
         <div id="ham-menu" class="ham-menu">
           <span class="ham-menu-bar"></span><span class="ham-menu-bar"></span
@@ -66,25 +66,28 @@
       <div class="bottom-section">
         <div class="socials">
           <a href="https://github.com/aakash-kalmady" target="_blank"
-            ><img src="icons/github.svg" alt="My GitHub"
+            ><img src="/assets/icons/github.svg" alt="My GitHub"
           /></a>
           <a href="https://www.instagram.com/aakash.kalmady/" target="_blank"
-            ><img src="icons/instagram.svg" alt="My Instagram"
+            ><img src="/assets/icons/instagram.svg" alt="My Instagram"
           /></a>
           <a href="https://www.linkedin.com/in/aakashkalmady/" target="_blank"
-            ><img src="icons/linkedin.svg" alt="My LinkedIn"
+            ><img src="/assets/icons/linkedin.svg" alt="My LinkedIn"
           /></a>
           <a
             href="https://www.youtube.com/channel/UC1GZjEyQfe7Kqa3HolKkVTQ"
             target="_blank"
-            ><img src="icons/youtube.svg" alt="My YouTube"
+            ><img src="/assets/icons/youtube.svg" alt="My YouTube"
           /></a>
         </div>
         <div class="mail-container">
           <a href="mailto:arkalmady@gmail.com?subject=Contacting From Website"
-            ><img src="icons/mail.png" alt="Contact Me" loading="eager" /><img
+            ><img
+              src="/assets/icons/mail.png"
+              alt="Contact Me"
+              loading="eager" /><img
               class="mirror-image"
-              src="icons/mail.png"
+              src="/assets/icons/mail.png"
               loading="eager"
           /></a>
           <div class="tooltip">GET IN TOUCH</div>
@@ -107,12 +110,16 @@
       <div id="navbar" class="navbar">
         <a onclick="scrollToHome()">HOME<span></span></a>
         <a onclick="scrollToAbout()">ABOUT<span></span></a>
-        <a onclick="scrollToPortfolio()">PORTFOLIO<span></span></a>
+        <a onclick="scrollToExperience()">EXPERIENCE<span></span></a>
         <a onclick="scrollToSkills()">SKILLS<span></span></a>
         <a onclick="scrollToGallery()">GALLERY<span></span></a>
       </div>
       <div id="signature-container" class="signature-container">
-        <img class="signature" src="icons/signature.png" alt="Signature" />
+        <img
+          class="signature"
+          src="/assets/icons/signature.png"
+          alt="Signature"
+        />
       </div>
     </nav>
 
@@ -124,23 +131,23 @@
 
         <div class="home-socials-container">
           <a href="https://github.com/aakash-kalmady" target="_blank"
-            ><img src="icons/github.svg" alt="My GitHub"
+            ><img src="/assets/icons/github.svg" alt="My GitHub"
           /></a>
           <a href="https://www.instagram.com/aakash.kalmady/" target="_blank"
-            ><img src="icons/instagram.svg" alt="My Instagram"
+            ><img src="/assets/icons/instagram.svg" alt="My Instagram"
           /></a>
           <a href="https://www.linkedin.com/in/aakashkalmady/" target="_blank"
-            ><img src="icons/linkedin.svg" alt="My LinkedIn"
+            ><img src="/assets/icons/linkedin.svg" alt="My LinkedIn"
           /></a>
           <a
             href="https://www.youtube.com/channel/UC1GZjEyQfe7Kqa3HolKkVTQ"
             target="_blank"
-            ><img src="icons/youtube.svg" alt="My YouTube"
+            ><img src="/assets/icons/youtube.svg" alt="My YouTube"
           /></a>
         </div>
       </div>
       <div class="home-portrait">
-        <img src="images/headshot.png" alt="Me" loading="eager" />
+        <img src="/assets/images/headshot.png" alt="Me" loading="eager" />
       </div>
     </header>
 
@@ -149,56 +156,41 @@
       <div class="content">
         <section id="about">
           <h2>About Me</h2>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
-          quaerat quia in molestiae, eaque, laborum est, officiis quae sunt quos
-          soluta voluptates voluptatum ratione! Quo, ipsa quidem eius quas
-          molestias odio sunt, distinctio voluptate consequuntur eum corporis
-          commodi exercitationem! Saepe voluptatibus fuga tempore, architecto
-          explicabo nesciunt, rem asperiores aspernatur quidem ipsam voluptate
-          quos. Tempore hic voluptatum quidem, maxime atque eius fugit
-          blanditiis sapiente deserunt obcaecati eligendi consequuntur molestiae
-          debitis quibusdam assumenda doloribus recusandae? Deleniti, maiores
-          magni exercitationem repellat sequi dicta id. Necessitatibus aliquam
-          animi beatae praesentium at laboriosam odit, cupiditate cumque? Rem
-          suscipit assumenda earum labore? Et sequi soluta, autem magni sunt
-          totam doloremque unde eaque facere laboriosam? Mollitia vel sunt
-          molestiae quam, expedita similique, beatae quia tempora perspiciatis
-          quo impedit nesciunt ratione non error praesentium quidem magnam
-          distinctio? Accusamus, error. Mollitia, doloribus? Hic, nobis!
-          Voluptatibus aliquam ea corrupti ullam nisi ipsum fuga at, officiis
-          animi autem aspernatur a dolorum possimus impedit praesentium
-          voluptates quisquam excepturi quos, accusamus, nulla velit dicta
-          dolore illum quas. Harum ipsa deserunt consequatur voluptatum sed
-          mollitia quia tempora asperiores odit rerum. Dicta pariatur
-          consequatur asperiores dolor adipisci sequi magnam aliquam, esse
-          itaque similique dolore, sed quam excepturi facilis cum culpa at
-          commodi, possimus est? Quod?
+          Passsionate student at the University of Maryland studying computer
+          engineering. I am heavily interested in tech, primarily the fields of
+          machine learning, and mathematics. I am pursuing a career at the
+          intersection of robotics with engineering. In my spare time, I like to
+          travel, dance, spend time with my family and friends, and develop my
+          coding skills!
+          <img style="width: 50vw" src="/assets/images/me.jpeg" alt="" />
+          <img style="width: 50vw" src="/assets/icons/umd.png" alt="UMD" />
+          <p>Some of my activites!</p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Tfj9oKEKn1U?si=ZnlnvVOGls7J2xBV"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/g3mWVeP3xBc?si=eRPODMqSTA-2CM5w"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </section>
-        <section id="portfolio">
-          <h2>Portfolio</h2>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, beatae
-          nulla impedit distinctio maxime saepe alias magnam harum. Animi, a
-          veniam. Reprehenderit veritatis necessitatibus iure non consectetur
-          qui enim. Quasi accusamus repellendus velit tenetur placeat hic
-          accusantium eos debitis, error quae temporibus reiciendis atque,
-          corporis, blanditiis tempora dolor culpa! Ullam totam eum eveniet
-          ratione obcaecati ab! Tenetur eaque cum ipsa quod reprehenderit nulla
-          excepturi sapiente ducimus maxime minima numquam dolore, eius expedita
-          quos. Soluta est veniam consectetur, modi unde impedit quisquam iure
-          accusantium perferendis non possimus aspernatur aliquam alias animi
-          culpa perspiciatis fugit mollitia reprehenderit! Dicta aspernatur
-          dolorum explicabo? In provident, non est voluptas asperiores molestias
-          eos culpa iusto dolores deleniti, placeat, corrupti numquam. Assumenda
-          libero vel quisquam! Perspiciatis nostrum perferendis fugit in quas.
-          Modi rem reiciendis nostrum, quibusdam at tempore nam nesciunt quo
-          laborum aperiam voluptate quasi inventore ex error magni repellendus
-          quis! Veniam repellat dicta commodi dolorum est obcaecati porro? Quos
-          quis est non minus cumque debitis quisquam consectetur corporis?
-          Exercitationem tempore nisi eaque vel maxime ipsa fugiat cum dolores
-          modi harum dolorum perspiciatis, ratione amet. Iste harum praesentium
-          unde quidem porro pariatur consequuntur illum, eaque delectus fugiat
-          quasi blanditiis reprehenderit perspiciatis iusto esse itaque
-          doloremque eius similique!
+        <section id="experience">
+          <h2>Experience</h2>
+          <a href="/assets/resume.pdf" target="_blank" class="resume-btn"
+            >Download Resume</a
+          >
         </section>
         <section id="skills">
           <h2>Skills</h2>
@@ -209,38 +201,38 @@
         <section id="gallery">
           <div class="picture-grid">
             <div class="image-container">
-              <a href="images/image1.jpeg" target="_blank"
-                ><img src="images/image1.jpeg" loading="lazy"
+              <a href="/assets/images/image1.jpeg" target="_blank"
+                ><img src="/assets/images/image1.jpeg" loading="lazy"
               /></a>
               <div>LONGWOOD GARDENS - KENNET SQUARE, PA</div>
             </div>
             <div class="image-container">
-              <a href="images/image2.jpeg" target="_blank"
-                ><img src="images/image2.jpeg" loading="lazy"
+              <a href="/assets/images/image2.jpeg" target="_blank"
+                ><img src="/assets/images/image2.jpeg" loading="lazy"
               /></a>
               <div>STADIUM - COLLEGE STATION, TX</div>
             </div>
             <div class="image-container">
-              <a href="images/image3.jpeg" target="_blank"
-                ><img src="images/image3.jpeg" loading="lazy"
+              <a href="/assets/images/image3.jpeg" target="_blank"
+                ><img src="/assets/images/image3.jpeg" loading="lazy"
               /></a>
               <div>CAYUGA LAGE - ITHACA, NY</div>
             </div>
             <div class="image-container">
-              <a href="images/image4.jpeg" target="_blank"
-                ><img src="images/image4.jpeg" loading="lazy"
+              <a href="/assets/images/image4.jpeg" target="_blank"
+                ><img src="/assets/images/image4.jpeg" loading="lazy"
               /></a>
               <div>SKYLINE - NYC, NY</div>
             </div>
             <div class="image-container">
-              <a href="images/image5.jpeg" target="_blank"
-                ><img src="images/image5.jpeg" loading="lazy"
+              <a href="/assets/images/image5.jpeg" target="_blank"
+                ><img src="/assets/images/image5.jpeg" loading="lazy"
               /></a>
               <div>HIGHWAY SUNSET - KING OF PRUSSIA, PA</div>
             </div>
             <div class="image-container">
-              <a href="images/image6.jpeg" target="_blank"
-                ><img src="images/image6.jpeg" loading="lazy"
+              <a href="/assets/images/image6.jpeg" target="_blank"
+                ><img src="/assets/images/image6.jpeg" loading="lazy"
               /></a>
               <div>WINTER SUNSET - DOWNINGTOWN, PA</div>
             </div>
