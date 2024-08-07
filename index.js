@@ -38,15 +38,13 @@ window.addEventListener("scroll", () => {
   homeMenu.style.top = -parallax * 0.5 + "px";
 });
 
-window.onload = scrollAnimation();
+homeMenu.style.height = window.innerHeight + "px";
+background.style.height = window.innerHeight + "px";
 
-function scrollAnimation() {
-  let i = 0;
-  for (i = 0; i < 1000; i++) {
-    scrollWheel.classList.toggle(".scroll-wheel-animated");
-    setTimeout(2000);
-  }
-}
+window.addEventListener("resize", () => {
+  homeMenu.style.height = window.innerHeight + "px";
+  background.style.height = window.innerHeight + "px";
+});
 
 function scrollToHome() {
   window.scroll({
