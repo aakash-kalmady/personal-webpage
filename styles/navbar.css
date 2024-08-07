@@ -74,7 +74,7 @@
   font-size: min(2.5vw, 1rem);
   font-weight: bold;
   cursor: pointer;
-  transition: color 0.4s width 0.4s;
+  transition: color 0.4s;
 }
 
 #navbar span,
@@ -86,7 +86,7 @@
   bottom: -4px;
   height: 2px;
   background-color: rgb(237, 181, 0);
-  transition: ease 0.3s;
+  transition: width 0.3s;
 }
 
 #navbar a:hover,

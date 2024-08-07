@@ -20,6 +20,6 @@ main {
 @media (max-width: 600px) {
   .content {
     margin-left: 0px;
-    border-top: 2px gray solid;
+    border-top: 2px rgb(237, 181, 0) solid;
   }
 }

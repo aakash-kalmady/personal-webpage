@@ -107,4 +107,8 @@
   .home-portrait {
     margin: 0;
   }
+
+  .home-socials-container a {
+    width: 9vw;
+  }
 }

@@ -26,12 +26,12 @@ hamMenu.addEventListener("click", toggleMenu);
 window.addEventListener("scroll", () => {
   var height;
   if (window.innerWidth < 600) {
-    height = homeMenu.offsetHeight;
+    height = homeMenu.offsetHeight - 120;
   } else {
-    height = window.innerHeight;
+    height = window.innerHeight - 80;
   }
   console.log(height);
-  if (window.scrollY > height - 120) {
+  if (window.scrollY > height) {
     navbar.className = "navbar-container-scrolled";
     signature.className = "signature-container-scrolled";
     scrollSection.className = "scroll-icon-container-scrolled";
