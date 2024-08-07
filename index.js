@@ -31,7 +31,7 @@ window.addEventListener("scroll", () => {
     height = window.innerHeight;
   }
   console.log(height);
-  if (window.scrollY > height - 80) {
+  if (window.scrollY > height - 120) {
     navbar.className = "navbar-container-scrolled";
     signature.className = "signature-container-scrolled";
     scrollSection.className = "scroll-icon-container-scrolled";

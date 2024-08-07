@@ -77,10 +77,10 @@
 
 @media (max-width: 600px) {
   #home {
-    top: 0px;
     left: 0;
+    top: 0;
     height: 100%;
-    padding-bottom: 0;
+    padding-top: 40px;
     flex-direction: column;
   }
   @supports (height: 100svh) {
@@ -102,5 +102,9 @@
 
   .home-portrait img {
     width: 60vw;
+  }
+
+  .home-portrait {
+    margin: 0;
   }
 }
