@@ -2,7 +2,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  bottom: 0;
+  height: 100%;
   width: 100vw;
   object-fit: cover;
   object-position: center;
@@ -77,13 +77,12 @@
 
 @media (max-width: 600px) {
   #home {
+    top: 80px;
     left: 0;
     height: 100%;
+    padding-bottom: 0;
     flex-direction: column;
     justify-content: center;
-  }
-  #background {
-    height: 100%;
   }
   @supports (height: 100svh) {
     #home {
