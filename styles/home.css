@@ -3,45 +3,45 @@
   left: 0;
   top: 0;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   object-position: center;
+  z-index: -5;
   filter: brightness(80%);
-  filter: grayscale(100%);
 }
 
 #home {
   position: fixed;
-  top: 0;
   bottom: 80px;
-  right: 0;
+  top: 0;
   left: 80px;
+  right: 0;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   z-index: 0;
   font-family: DM Sans, Arial, sans-serif;
+  perspective: 10px;
 }
 
 .home-msg {
   text-align: left;
   color: whitesmoke;
-  margin-left: 7vw;
   background: none;
   flex-shrink: 0;
   text-wrap: nowrap;
   font-size: 3vw;
 }
 .home-portrait {
-  margin-right: 5vw;
-  margin-left: 11vw;
   display: flex;
   align-items: center;
 }
 
 .home-portrait img {
-  width: 100%;
+  width: 40vw;
   object-fit: cover;
   border-radius: 20px;
+  transform: translateZ(-10px);
 }
 
 .home-socials-container {
@@ -53,7 +53,7 @@
 }
 
 .home-socials-container a {
-  width: min(7vw, 60px);
+  width: min(6vw, 60px);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -82,7 +82,6 @@
     height: 100%;
     padding-bottom: 0;
     flex-direction: column;
-    justify-content: center;
   }
   @supports (height: 100svh) {
     #home {
@@ -95,15 +94,13 @@
   .home-msg {
     font-size: 5vw;
     margin: 0;
-    margin-bottom: 11vh;
   }
 
   #element {
     font-size: 4.7vw;
   }
 
-  .home-portrait {
-    width: 60vw;
-    margin: 0;
+  .home-portrait img {
+    width: 50vw;
   }
 }

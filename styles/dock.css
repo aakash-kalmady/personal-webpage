@@ -4,6 +4,7 @@
   justify-content: center;
   height: 80px;
   font-size: 0.8rem;
-  color: rgb(177, 177, 177);
+  color: gray;
   font-family: DM Sans, Arial, sans-serif;
+  background-color: rgb(27, 27, 27);
 }

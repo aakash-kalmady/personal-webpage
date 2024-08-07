@@ -40,9 +40,10 @@ window.addEventListener("scroll", () => {
     signature.className = "signature-container";
     scrollSection.className = "scroll-icon-container";
   }
+
   var parallax = window.scrollY;
-  background.style.top = -parallax * 0.15 + "px";
-  homeMenu.style.top = -parallax * 0.5 + "px";
+  background.style.top = -parallax * 0.2 + "px";
+  homeMenu.style.top = -parallax * 0.6 + "px";
 });
 
 function scrollToHome() {
