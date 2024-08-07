@@ -2,7 +2,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  height: 100%;
+  bottom: 0;
   width: 100vw;
   object-fit: cover;
   object-position: center;
@@ -13,9 +13,9 @@
 #home {
   position: fixed;
   top: 0;
+  bottom: 80px;
   right: 0;
   left: 80px;
-  bottom: 80px;
   display: flex;
   align-items: center;
   z-index: 0;
@@ -77,13 +77,22 @@
 
 @media (max-width: 600px) {
   #home {
-    top: 0;
     left: 0;
-    width: 100vw;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
   }
-
+  #background {
+    height: 100%;
+  }
+  @supports (height: 100svh) {
+    #home {
+      height: 100svh;
+    }
+    #background {
+      height: 100svh;
+    }
+  }
   .home-msg {
     font-size: 5vw;
     margin: 0;

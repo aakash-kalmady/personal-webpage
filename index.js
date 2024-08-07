@@ -38,20 +38,6 @@ window.addEventListener("scroll", () => {
   homeMenu.style.top = -parallax * 0.5 + "px";
 });
 
-homeMenu.style.height = window.innerHeight + "px";
-background.style.height = window.innerHeight + "px";
-
-window.addEventListener("resize", () => {
-  console.log(window.innerWidth);
-  if (window.innerWidth < 600) {
-    homeMenu.style.height = window.outerHeight + "px";
-    background.style.height = window.outerHeight + "px";
-  } else {
-    homeMenu.style.height = window.innerHeight + "px";
-    background.style.height = window.innerHeight + "px";
-  }
-});
-
 function scrollToHome() {
   window.scroll({
     top: 0,
