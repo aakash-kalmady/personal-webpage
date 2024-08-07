@@ -72,7 +72,7 @@
   position: relative;
   color: gray;
   text-decoration: none;
-  font-size: min(2vw, 1rem);
+  font-size: min(2.5vw, 1rem);
   font-weight: bold;
   cursor: pointer;
   transition: color 0.4s width 0.4s;
@@ -108,7 +108,7 @@
   width: 20vw;
   justify-content: center;
   align-items: center;
-  font-size: min(2vw, 1rem);
+  font-size: min(2.5vw, 1rem);
   font-weight: bold;
   border-right: 1px rgb(80, 80, 80) solid;
   color: gray;
