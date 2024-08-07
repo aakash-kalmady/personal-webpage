@@ -92,15 +92,15 @@
     }
   }
   .home-msg {
-    font-size: 5vw;
+    font-size: 6vw;
     margin: 0;
   }
 
   #element {
-    font-size: 4.7vw;
+    font-size: 5.5vw;
   }
 
   .home-portrait img {
-    width: 50vw;
+    width: 60vw;
   }
 }
