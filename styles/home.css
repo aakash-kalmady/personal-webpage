@@ -79,14 +79,9 @@
   #home {
     top: 0;
     left: 0;
-    height: 0;
     width: 100vw;
     flex-direction: column;
     justify-content: center;
-  }
-
-  #background {
-    height: 0;
   }
 
   .home-msg {
