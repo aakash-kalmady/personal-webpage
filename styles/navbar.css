@@ -10,6 +10,7 @@
   color: white;
   display: flex;
   transition: background-color 0.25s;
+  font-family: PT Sans, Arial, sans-serif;
 }
 
 .navbar-container {
@@ -38,6 +39,7 @@
   justify-content: center;
   align-items: center;
   transition: background-color 0.25s;
+  cursor: pointer;
 }
 
 .signature-container {
@@ -160,7 +162,9 @@
 @media (max-width: 600px) {
   .navbar-container,
   .navbar-container-scrolled {
-    padding-left: 50px;
+    padding-left: 0px;
+    position: fixed;
+    top: 0;
   }
 
   #navbar {

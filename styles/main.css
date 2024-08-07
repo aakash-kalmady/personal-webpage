@@ -19,6 +19,7 @@ main {
 
 @media (max-width: 600px) {
   .content {
-    margin-left: 50px;
+    margin-left: 0px;
+    border-top: 2px gray solid;
   }
 }

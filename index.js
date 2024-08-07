@@ -28,12 +28,10 @@ window.addEventListener("scroll", () => {
     navbar.className = "navbar-container-scrolled";
     signature.className = "signature-container-scrolled";
     scrollSection.className = "scroll-icon-container-scrolled";
-    homeMenu.style.display = "none";
   } else {
     navbar.className = "navbar-container";
     signature.className = "signature-container";
     scrollSection.className = "scroll-icon-container";
-    homeMenu.style.display = "flex";
   }
   var parallax = window.scrollY;
   background.style.top = -parallax * 0.15 + "px";
