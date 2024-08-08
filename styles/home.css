@@ -7,11 +7,11 @@
   object-fit: cover;
   object-position: center;
   z-index: -5;
-  filter: brightness(80%);
+  filter: brightness(70%);
 }
 
 #home {
-  position: fixed;
+  position: absolute;
   bottom: 80px;
   top: 0;
   left: 80px;
@@ -21,7 +21,6 @@
   justify-content: space-evenly;
   z-index: 0;
   font-family: DM Sans, Arial, sans-serif;
-  perspective: 10px;
 }
 
 .home-msg {
@@ -41,7 +40,6 @@
   width: 40vw;
   object-fit: cover;
   border-radius: 20px;
-  transform: translateZ(-10px);
 }
 
 .home-socials-container {
@@ -83,6 +81,7 @@
     padding-top: 40px;
     flex-direction: column;
   }
+
   @supports (height: 100svh) {
     #home {
       height: 100svh;

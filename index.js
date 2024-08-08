@@ -22,10 +22,11 @@ function toggleMenu() {
 
 hamMenu.addEventListener("click", toggleMenu);
 
-//function to shift nav bar depending on how far one has scrolled
+//function to shift nav bar depending on how far one has scrolled and parallax for background
 window.addEventListener("scroll", () => {
   var height;
-  if (window.innerWidth < 600) {
+  background.style.top = -window.scrollY * 0.25 + "px";
+  if (window.innerWidth < 625) {
     height = homeMenu.offsetHeight - 120;
   } else {
     height = window.innerHeight - 80;
@@ -40,10 +41,6 @@ window.addEventListener("scroll", () => {
     signature.className = "signature-container";
     scrollSection.className = "scroll-icon-container";
   }
-
-  var parallax = window.scrollY;
-  background.style.top = -parallax * 0.2 + "px";
-  homeMenu.style.top = -parallax * 0.6 + "px";
 });
 
 function scrollToHome() {
