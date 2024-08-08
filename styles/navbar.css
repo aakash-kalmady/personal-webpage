@@ -169,5 +169,20 @@
   #navbar {
     padding-left: 10px;
     padding-right: 10px;
+    border: none;
+  }
+
+  .scroll-icon-container,
+  .scroll-icon-container-scrolled {
+    border: none;
+  }
+
+  .navbar-container {
+    background-color: rgb(35, 35, 35);
+  }
+
+  .scroll-icon-container,
+  .signature-container {
+    background-color: rgb(27, 27, 27);
   }
 }
