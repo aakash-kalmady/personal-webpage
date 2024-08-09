@@ -254,7 +254,11 @@
         <section id="contact">
           <h2>Get In Touch</h2>
           <h3>Contact Me.</h3>
-          <form action="https://api.web3forms.com/submit" method="POST">
+          <form
+            id="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
             <!-- Replace with your Access Key -->
             <input
               type="hidden"
@@ -285,12 +289,13 @@
             />
 
             <!-- Custom Confirmation / Success Page -->
-            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+            <input type="hidden" name="redirect" value="/thanks.html" />
 
             <button
-              type="submit"
               class="g-recaptcha"
-              data-sitekey="6Le1xCIqAAAAABRDfgM28u_4QdP4rXwuIyC3_E9b"
+              data-sitekey="reCAPTCHA_site_key"
+              data-callback="onSubmit"
+              data-action="submit"
             >
               Submit Form
             </button>
@@ -314,7 +319,7 @@
     </script>
     <script>
       function onSubmit(token) {
-        document.getElementById("demo-form").submit();
+        document.getElementById("contact-form").submit();
       }
     </script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
