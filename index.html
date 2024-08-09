@@ -252,47 +252,93 @@
           </div>
         </section>
         <section id="contact">
-          <h2>Get In Touch</h2>
-          <h3>Contact Me.</h3>
-          <form
-            id="contact-form"
-            action="https://api.web3forms.com/submit"
-            method="POST"
-          >
-            <!-- Replace with your Access Key -->
-            <input
-              type="hidden"
-              name="access_key"
-              value="c58dd749-0513-466e-9f9a-49966810e495"
-            />
+          <div class="contact-container">
+            <div class="contact-label">
+              <div class="contact-label-bar"></div>
+              <div>
+                <h2>Get In Touch</h2>
+                <p>Contact Me.</p>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- Replace with your Access Key -->
+                <div class="contact-form-elements">
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="c58dd749-0513-466e-9f9a-49966810e495"
+                  />
 
-            <!-- Form Inputs. Each input must have a name="" attribute -->
-            <input type="text" name="name" placeholder="Your Name *" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email Address *"
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="Your Message:"
-              required
-            ></textarea>
+                  <!-- Form Inputs. Each input must have a name="" attribute -->
+                  <input
+                    class="contact-field"
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                  <input
+                    class="contact-field"
+                    type="email"
+                    name="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                  <input
+                    class="contact-field"
+                    type="text"
+                    name="Phone Number"
+                    placeholder="Phone"
+                    required
+                  />
+                  <input
+                    class="contact-field"
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                  />
 
-            <!-- Honeypot Spam Protection -->
-            <input
-              type="checkbox"
-              name="botcheck"
-              class="hidden"
-              style="display: none"
-            />
+                  <!-- Honeypot Spam Protection -->
+                  <input
+                    type="checkbox"
+                    name="botcheck"
+                    class="hidden"
+                    style="display: none"
+                  />
 
-            <!-- Custom Confirmation / Success Page -->
-            <!--<input type="hidden" name="redirect" value="thanks.html" -->
+                  <!-- Optional: Custom Redirection or Thank you Page
+       Make sure you add full URL including https:// -->
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://aakashkalmady.dev/thanks.html"
+                  />
 
-            <button name="submit">Submit Form</button>
-          </form>
+                  <!-- Optional: But Recommended: To Prevent SPAM Submission.
+       Make sure its hidden by default -->
+                  <input
+                    type="checkbox"
+                    name="botcheck"
+                    class="hidden"
+                    style="display: none"
+                  />
+                </div>
+                <div class="contact-message">
+                  <textarea
+                    class="contact-field"
+                    name="message"
+                    placeholder="Your Message:"
+                    required
+                  ></textarea>
+                </div>
+                <button class="contact-btn" name="submit">
+                  <span></span>SEND MESSAGE
+                </button>
+              </form>
+            </div>
+          </div>
         </section>
         <section class="dock-container">
           &copy AAKASH KALMADY 2024 — ALL RIGHTS RESERVED.
@@ -310,5 +356,6 @@
         showCursor: true,
       });
     </script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>

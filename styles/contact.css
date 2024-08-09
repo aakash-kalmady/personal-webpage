@@ -1,4 +1,98 @@
 #contact {
   padding: 30px;
-  font-family: DM Sans, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+}
+
+.contact-label {
+  display: flex;
+  font-size: min(2.5vw, 1rem);
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  width: 55vw;
+}
+
+.contact-form-elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.contact-field {
+  background-color: rgb(9, 13, 25);
+  color: white;
+  border: none;
+  padding: 15px;
+  border: 1px rgba(60, 60, 60, 0.2) solid;
+  font-size: min(2.5vw, 1rem);
+}
+
+.contact-field::placeholder {
+  color: white;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: min(2.5vw, 1rem);
+}
+
+.contact-message {
+  margin-top: 10px;
+  flex: 1;
+}
+
+.contact-message textarea {
+  resize: none;
+  height: 100px;
+  width: 55vw;
+  font-size: min(2.5vw, 1rem);
+  font-family: PT Sans, Arial, sans-serif;
+}
+
+.contact-btn {
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(237, 181, 0);
+  border: 1px rgba(0, 0, 0, 0) solid;
+  border-radius: 4px;
+  padding: 15px 40px 15px 40px;
+  font-size: min(2.5vw, 1rem);
+  font-family: PT Sans, Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+.contact-btn:hover {
+  background-color: black;
+  border-color: gray;
+}
+
+.contact-label p {
+  margin-top: 10px;
+}
+
+.contact-label-bar {
+  width: 5px;
+  background-color: rgb(237, 181, 0);
+  margin-right: 3vw;
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form-elements {
+    grid-template-columns: 1fr;
+  }
 }
