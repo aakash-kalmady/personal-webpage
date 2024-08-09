@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
 
+    <!--Logo, Theme, and Search Keywords-->
     <link rel="icon" type="image/png" href="/assets/icons/logo.png" />
     <meta name="theme-color" content="rgb(20,20,20)" />
     <meta
@@ -34,8 +35,8 @@
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/about.css" />
     <link rel="stylesheet" href="/styles/experience.css" />
-    <link rel="stylesheet" href="/styles/skills.css" />
     <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
     <link rel="stylesheet" href="/styles/dock.css" />
 
     <title>Aakash Kalmady's Website</title>
@@ -80,7 +81,7 @@
           /></a>
         </div>
         <div class="mail-container">
-          <a href="mailto:arkalmady@gmail.com?subject=Contacting From Website"
+          <a onclick="scrollToContact()"
             ><img
               src="/assets/icons/mail.png"
               alt="Contact Me"
@@ -110,8 +111,8 @@
         <a onclick="scrollToHome()">HOME<span></span></a>
         <a onclick="scrollToAbout()">ABOUT<span></span></a>
         <a onclick="scrollToExperience()">EXPERIENCE<span></span></a>
-        <a onclick="scrollToSkills()">SKILLS<span></span></a>
         <a onclick="scrollToGallery()">GALLERY<span></span></a>
+        <a onclick="scrollToContact()">CONTACT<span></span></a>
       </div>
       <div
         onClick="window.location.reload();"
@@ -132,12 +133,7 @@
         <p>Hi there!</p>
         <p>I'm Aakash Kalmady.</p>
         <span id="element"> </span>
-
         <div class="home-socials-container">
-          <a href="mailto:arkalmady@gmail.com?subject=Contacting From Website"
-            ><img src="/assets/icons/email.svg" alt="Mail"
-          /></a>
-
           <a href="https://www.linkedin.com/in/aakashkalmady/" target="_blank"
             ><img src="/assets/icons/linkedin.svg" alt="My LinkedIn"
           /></a>
@@ -175,7 +171,6 @@
                 spare time, I like to lift, travel, dance, spend time with my
                 family and friends, and develop my coding skills!
               </p>
-
               <img src="/assets/icons/umd.png" alt="UMD" />
             </div>
           </div>
@@ -200,15 +195,9 @@
           </div>
         </section>
         <section id="experience">
-          <h2>Experience</h2>
           <a href="/assets/resume.pdf" target="_blank" class="resume-btn"
             >Download Resume</a
           >
-        </section>
-        <section id="skills">
-          <h2>Skills</h2>
-          <li>Coming</li>
-          <li>Soon</li>
         </section>
         <section id="gallery">
           <div class="picture-grid">
@@ -249,7 +238,6 @@
               <div>WINTER SUNSET - DOWNINGTOWN, PA</div>
             </div>
           </div>
-          <h2>Check out my spotify playlist!</h2>
           <div class="spotify-grid">
             <iframe
               style="border-radius: 12px"
@@ -262,6 +250,42 @@
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             ></iframe>
           </div>
+        </section>
+        <section id="contact">
+          <h2>Get In Touch</h2>
+          <h3>Contact Me.</h3>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace with your Access Key -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="c58dd749-0513-466e-9f9a-49966810e495"
+            />
+
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <input type="text" name="name" required />
+            <input type="email" name="email" required />
+            <textarea name="message" required></textarea>
+
+            <!-- Honeypot Spam Protection -->
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
+
+            <!-- Custom Confirmation / Success Page -->
+            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+            <button
+              type="submit"
+              class="g-recaptcha"
+              data-sitekey="6LcdySIqAAAAAL-0yZHqWew-oW_6LSEUs8fqyWhR"
+            >
+              Submit Form
+            </button>
+          </form>
         </section>
         <section class="dock-container">
           &copy AAKASH KALMADY 2024 — ALL RIGHTS RESERVED.
@@ -279,5 +303,11 @@
         showCursor: true,
       });
     </script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+      }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </body>
 </html>

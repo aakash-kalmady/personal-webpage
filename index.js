@@ -12,8 +12,8 @@ let homeMenu = document.getElementById("home");
 //section elements
 let about = document.getElementById("about");
 let experience = document.getElementById("experience");
-let skills = document.getElementById("skills");
 let gallery = document.getElementById("gallery");
+let contact = document.getElementById("contact");
 
 function toggleMenu() {
   menu.classList.toggle("menu-container-toggled");
@@ -57,10 +57,10 @@ function scrollToExperience() {
   experience.scrollIntoView();
 }
 
-function scrollToSkills() {
-  skills.scrollIntoView();
-}
-
 function scrollToGallery() {
   gallery.scrollIntoView();
+}
+
+function scrollToContact() {
+  contact.scrollIntoView();
 }
