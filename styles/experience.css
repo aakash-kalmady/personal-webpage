@@ -2,6 +2,8 @@
   padding: 30px;
   font-family: DM Sans, Arial, sans-serif;
   text-align: center;
+  background-image: linear-gradient(rgb(51, 60, 160), rgb(35, 0, 99));
+  height: 500px;
 }
 
 .resume-btn {

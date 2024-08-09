@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    * {
+      margin: 0;
+      font-family: DM Sans, Arial, sans-serif;
+    }
+    body {
+      height: 100vh;
+      background-image: linear-gradient(rgb(9, 13, 25), rgb(10, 10, 10));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    p {
+      margin-top: 5px;
+    }
+    img {
+      width: 150px;
+      margin-bottom: 20px;
+      filter: invert(20%) sepia(45%) saturate(371%) hue-rotate(79deg)
+        brightness(96%) contrast(96%);
+    }
+    h1 {
+      color: rgb(134, 239, 172);
+      font-weight: normal;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: white;
+      font-size: 1rem;
+    }
+
+    a {
+      margin-top: 15px;
+      text-decoration: none;
+      color: white;
+      font-size: 1.25rem;
+      color: antiquewhite;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
   <body>
-    <a href="index.html">Home</a>
-    <p>Thank you for contacting me!</p>
+    <img src="/assets/icons/checkmark.svg" alt="Checkmark" />
+    <h1>Message submitted successfully!</h1>
+    <p>Thank you! Your message has been submitted successfully.</p>
+    <p>I will reply to you soon!</p>
+    <a href="index.html">Go back</a>
   </body>
 </html>

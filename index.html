@@ -203,52 +203,40 @@
           <div class="picture-grid">
             <div class="image-container">
               <a href="/assets/images/image1.jpeg" target="_blank"
-                ><img src="/assets/images/image1.jpeg" loading="lazy"
+                ><img src="/assets/images/image1.jpeg"
               /></a>
               <div>LONGWOOD GARDENS - KENNET SQUARE, PA</div>
             </div>
             <div class="image-container">
               <a href="/assets/images/image2.jpeg" target="_blank"
-                ><img src="/assets/images/image2.jpeg" loading="lazy"
+                ><img src="/assets/images/image2.jpeg"
               /></a>
               <div>STADIUM - COLLEGE STATION, TX</div>
             </div>
             <div class="image-container">
               <a href="/assets/images/image3.jpeg" target="_blank"
-                ><img src="/assets/images/image3.jpeg" loading="lazy"
+                ><img src="/assets/images/image3.jpeg"
               /></a>
               <div>CAYUGA LAGE - ITHACA, NY</div>
             </div>
             <div class="image-container">
               <a href="/assets/images/image4.jpeg" target="_blank"
-                ><img src="/assets/images/image4.jpeg" loading="lazy"
+                ><img src="/assets/images/image4.jpeg"
               /></a>
               <div>SKYLINE - NYC, NY</div>
             </div>
             <div class="image-container">
               <a href="/assets/images/image5.jpeg" target="_blank"
-                ><img src="/assets/images/image5.jpeg" loading="lazy"
+                ><img src="/assets/images/image5.jpeg"
               /></a>
               <div>HIGHWAY SUNSET - KING OF PRUSSIA, PA</div>
             </div>
             <div class="image-container">
               <a href="/assets/images/image6.jpeg" target="_blank"
-                ><img src="/assets/images/image6.jpeg" loading="lazy"
+                ><img src="/assets/images/image6.jpeg"
               /></a>
               <div>WINTER SUNSET - DOWNINGTOWN, PA</div>
             </div>
-          </div>
-          <div class="spotify-grid">
-            <iframe
-              style="border-radius: 12px"
-              src="https://open.spotify.com/embed/playlist/0BJNc6UOjo3jSCHigkzqAH?utm_source=generator&theme=0"
-              width="40%"
-              height="352"
-              frameborder="0"
-              allowfullscreen=""
-              loading="lazy"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            ></iframe>
           </div>
         </section>
         <section id="contact">
@@ -258,6 +246,7 @@
               <div>
                 <h2>Get In Touch</h2>
                 <p>Contact Me.</p>
+                <p>arkalmady@gmail.com</p>
               </div>
             </div>
             <div class="contact-form">
@@ -269,7 +258,6 @@
                     name="access_key"
                     value="c58dd749-0513-466e-9f9a-49966810e495"
                   />
-
                   <!-- Form Inputs. Each input must have a name="" attribute -->
                   <input
                     class="contact-field"
@@ -299,7 +287,12 @@
                     placeholder="Subject"
                     required
                   />
-
+                  <!--From Name-->
+                  <input
+                    type="hidden"
+                    name="from_name"
+                    value="Contacting From Website"
+                  />
                   <!-- Honeypot Spam Protection -->
                   <input
                     type="checkbox"
@@ -307,17 +300,14 @@
                     class="hidden"
                     style="display: none"
                   />
-
-                  <!-- Optional: Custom Redirection or Thank you Page
-       Make sure you add full URL including https:// -->
+                  <!-- Redirect -->
                   <input
                     type="hidden"
                     name="redirect"
                     value="https://aakashkalmady.dev/thanks.html"
                   />
 
-                  <!-- Optional: But Recommended: To Prevent SPAM Submission.
-       Make sure its hidden by default -->
+                  <!-- SPAM Protection -->
                   <input
                     type="checkbox"
                     name="botcheck"
