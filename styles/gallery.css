@@ -1,7 +1,13 @@
 #gallery {
   padding: 5px 5px 20px 5px;
   font-family: DM Sans, Arial, sans-serif;
-  background-image: linear-gradient(rgb(35, 0, 99), rgb(9, 13, 25));
+  background-image: linear-gradient(black, rgb(9, 13, 25));
+  font-size: min(2.5vw, 2rem);
+  text-align: center;
+}
+
+#gallery h2 {
+  margin: 0 0 20px 20px;
 }
 
 .picture-grid {

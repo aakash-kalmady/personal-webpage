@@ -1,11 +1,16 @@
 #experience {
   padding: 30px;
   font-family: DM Sans, Arial, sans-serif;
-  text-align: center;
-  background-image: linear-gradient(rgb(51, 60, 160), rgb(35, 0, 99));
-  height: 500px;
+  text-align: left;
+  background-image: linear-gradient(rgb(35, 0, 99), black);
+  font-size: min(2.5vw, 2rem);
 }
 
+.resume-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .resume-btn {
   background-color: black;
   border-radius: 10px;

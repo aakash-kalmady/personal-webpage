@@ -2,25 +2,25 @@
   position: relative;
   padding: 30px;
   font-family: DM Sans, Arial, sans-serif;
-  font-size: 1rem;
-  text-align: center;
-  background-image: linear-gradient(rgb(9, 13, 25), rgb(51, 60, 160));
+  background-image: linear-gradient(rgb(9, 13, 25), rgb(35, 0, 99));
 }
 
 .about-top {
   display: flex;
+  margin-bottom: 10px;
 }
 .about-desc {
-  margin-top: 5%;
   margin-left: 3vw;
+  font-size: min(2.5vw, 2rem);
+  text-align: left;
 }
 
 .about-portrait img {
-  width: 35vw;
+  width: 45vw;
 }
 
 .about-desc img {
-  width: 60%;
+  width: 100%;
 }
 
 .youtube-previews {
@@ -36,8 +36,7 @@
 }
 
 #about p {
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1000px) {

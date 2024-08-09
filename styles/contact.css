@@ -1,8 +1,12 @@
 #contact {
-  padding: 30px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   background-image: linear-gradient(rgb(9, 13, 25), rgb(10, 10, 10));
+}
+
+#contact h2 {
+  font-size: min(3vw, 2rem);
 }
 
 .contact-container {
