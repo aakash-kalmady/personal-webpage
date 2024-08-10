@@ -17,6 +17,7 @@
 
 .about-portrait img {
   width: 45vw;
+  border-radius: 25px;
 }
 
 .about-desc img {

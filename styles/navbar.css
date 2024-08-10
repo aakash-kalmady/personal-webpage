@@ -183,6 +183,12 @@
 
   .scroll-icon-container,
   .signature-container {
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(35, 35, 35);
+  }
+
+  .navbar-container-scrolled:hover #scroll-icon-container,
+  .navbar-container-scrolled:hover #signature-container,
+  .navbar-container-scrolled:hover #navbar {
+    background-color: rgb(35, 35, 35);
   }
 }

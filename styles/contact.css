@@ -42,14 +42,14 @@
   color: white;
   padding: 15px;
   border: 1px rgba(60, 60, 60, 0.2) solid;
-  font-size: min(2.5vw, 1rem);
+  font-size: 0.8rem;
   border-radius: 4px;
 }
 
 .contact-field::placeholder {
   color: white;
   font-family: PT Sans, Arial, sans-serif;
-  font-size: min(2.5vw, 1rem);
+  font-size: 0.8rem;
 }
 
 .contact-message {
@@ -72,7 +72,7 @@
   border: 1px rgba(0, 0, 0, 0) solid;
   border-radius: 4px;
   padding: 15px 40px 15px 40px;
-  font-size: min(2.5vw, 1rem);
+  font-size: 0.8rem;
   font-family: PT Sans, Arial, sans-serif;
   font-weight: bold;
   cursor: pointer;
