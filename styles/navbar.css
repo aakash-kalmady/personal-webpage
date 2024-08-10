@@ -10,7 +10,7 @@
   color: white;
   display: flex;
   transition: background-color 0.25s;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: Titillium Web, sans-serif;
 }
 
 .navbar-container {
@@ -20,7 +20,7 @@
 .navbar-container-scrolled {
   position: fixed;
   top: 0;
-  background-color: rgba(27, 27, 27, 0.4);
+  background-color: rgba(20, 20, 20, 0.6);
 }
 
 .navbar-container-scrolled:hover #scroll-icon-container,
@@ -60,7 +60,6 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
   padding: 0 20px 0 20px;
   border-right: 1px rgb(80, 80, 80) solid;
   transition: background-color 0.25s;
@@ -120,8 +119,9 @@
 }
 
 .signature-container-scrolled,
-.scroll-icon-container-scrolled {
-  background-color: rgba(20, 20, 20, 0.3);
+.scroll-icon-container-scrolled,
+.navbar-container-scrolled #navbar {
+  background-color: rgba(20, 20, 20, 0.6);
 }
 
 .mouse-icon {
@@ -164,6 +164,7 @@
     padding-left: 0px;
     position: fixed;
     top: 0;
+    height: 50px;
   }
 
   #navbar {

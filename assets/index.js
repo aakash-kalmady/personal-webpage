@@ -27,7 +27,7 @@ window.addEventListener("scroll", () => {
   var height;
   background.style.top = -window.scrollY * 0.5 + "px";
   if (window.innerWidth < 625) {
-    height = homeMenu.offsetHeight - 120;
+    height = homeMenu.offsetHeight - 75;
   } else {
     height = window.innerHeight - 80;
   }

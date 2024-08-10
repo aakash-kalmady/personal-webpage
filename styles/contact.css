@@ -48,7 +48,7 @@
 
 .contact-field::placeholder {
   color: white;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: Titillium Web, Arial, sans-serif;
   font-size: 0.8rem;
 }
 
@@ -73,7 +73,7 @@
   border-radius: 4px;
   padding: 15px 40px 15px 40px;
   font-size: 0.8rem;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: Titillium Web, Arial, sans-serif;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.25s, border-color 0.25s;
