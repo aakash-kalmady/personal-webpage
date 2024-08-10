@@ -6,7 +6,7 @@
 }
 
 #contact h2 {
-  font-size: min(3vw, 2rem);
+  font-size: 2vw;
 }
 
 .contact-container {
@@ -17,7 +17,6 @@
 
 .contact-label {
   display: flex;
-  font-size: min(2.5vw, 1rem);
   margin-bottom: 10px;
 }
 
@@ -86,7 +85,7 @@
 
 .contact-label p {
   margin-top: 15px;
-  font-size: min(2.5vw, 0.8rem);
+  font-size: 1vw;
 }
 
 .contact-label-bar {
@@ -106,5 +105,11 @@
   }
   .contact-form-elements {
     grid-template-columns: 1fr;
+  }
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+  .contact-label p {
+    font-size: 0.8rem;
   }
 }
