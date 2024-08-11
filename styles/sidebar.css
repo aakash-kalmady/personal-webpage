@@ -111,7 +111,7 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  border: 1px rgba(60, 60, 60, 0.2) solid;
+  border: 1px rgba(60, 60, 60, 0.3) solid;
   filter: brightness(70%);
   transition: filter 0.5s, border-radius 0.15s, border-color 0.15s;
 }

@@ -142,7 +142,7 @@
   background-color: rgb(237, 181, 0);
   border-radius: 2px;
   animation-name: scroll-animation;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
@@ -153,8 +153,11 @@
   25% {
     transform: translateY(-5px);
   }
-  100% {
+  90% {
     transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(-5px);
   }
 }
 

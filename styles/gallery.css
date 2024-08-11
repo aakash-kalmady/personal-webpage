@@ -19,11 +19,10 @@
 }
 
 .picture-grid img {
-  height: 100%;
   width: 100%;
-  object-fit: cover;
   filter: brightness(70%);
   transition: filter 0.5s;
+  image-rendering: optimizeSpeed;
 }
 
 .picture-grid img:hover {
@@ -75,5 +74,11 @@
 @media (max-width: 1000px) {
   iframe {
     width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .picture-grid img {
+    filter: brightness(100%);
   }
 }

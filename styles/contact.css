@@ -6,27 +6,27 @@
 }
 
 #contact h2 {
-  font-size: 2vw;
+  font-size: 1.5rem;
+  text-wrap: nowrap;
 }
 
 .contact-container {
   display: flex;
-  justify-content: space-between;
-  width: 70vw;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 4vw 0 4vw;
 }
 
 .contact-label {
   display: flex;
+  flex: 1;
+  justify-content: center;
   margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .contact-form {
-  width: 55vw;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: white;
+  flex: 3;
 }
 
 .contact-form-elements {
@@ -40,9 +40,10 @@
   background-color: rgba(0, 0, 0, 0);
   color: white;
   padding: 15px;
-  border: 1px rgba(60, 60, 60, 0.2) solid;
+  border: 1px rgba(60, 60, 60, 0.3) solid;
   font-size: 0.8rem;
   border-radius: 4px;
+  min-width: 0;
 }
 
 .contact-field::placeholder {
@@ -60,7 +61,7 @@
 .contact-message textarea {
   resize: none;
   height: 100px;
-  font-size: min(2.5vw, 1rem);
+  font-size: 0.8rem;
   font-family: PT Sans, Arial, sans-serif;
 }
 
@@ -71,7 +72,7 @@
   border: 1px rgba(0, 0, 0, 0) solid;
   border-radius: 4px;
   padding: 15px 40px 15px 40px;
-  font-size: 0.8rem;
+  font-size: min(2.5vw, 1rem);
   font-family: Titillium Web, Arial, sans-serif;
   font-weight: bold;
   cursor: pointer;
@@ -85,31 +86,34 @@
 
 .contact-label p {
   margin-top: 15px;
-  font-size: 1vw;
+  font-size: min(2.5vw, 1rem);
 }
 
 .contact-label-bar {
   width: 5px;
   background-image: linear-gradient(rgb(237, 181, 0), rgb(15, 15, 15));
-  margin-right: 20px;
+  margin-right: 15px;
   border-radius: 2px;
 }
 
 @media (max-width: 600px) {
   .contact-container {
     flex-direction: column;
+    align-items: center;
+    padding: 0;
   }
 
   .contact-form {
-    width: 100%;
+    width: 80vw;
   }
   .contact-form-elements {
     grid-template-columns: 1fr;
   }
-  #contact h2 {
-    font-size: 1.5rem;
-  }
-  .contact-label p {
-    font-size: 0.8rem;
+
+  .contact-label {
+    justify-content: start;
+    width: 80vw;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
