@@ -66,7 +66,7 @@
 }
 
 .contact-btn {
-  margin-top: 10px;
+  margin-top: 20px;
   color: white;
   background-color: rgb(237, 181, 0);
   border: 1px rgba(0, 0, 0, 0) solid;
@@ -115,5 +115,8 @@
     width: 80vw;
     margin-right: 0;
     margin-bottom: 10px;
+  }
+  .contact-btn {
+    padding: 10px 30px 10px 30px;
   }
 }

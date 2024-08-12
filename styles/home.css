@@ -7,6 +7,8 @@
   object-fit: cover;
   object-position: center;
   z-index: -5;
+  filter: brightness(70%) sepia(50%) opacity(80%);
+  image-rendering: optimizeSpeed;
 }
 
 #home {
@@ -38,7 +40,9 @@
 .home-portrait img {
   width: 40vw;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 15px;
+  image-rendering: optimizeSpeed;
+  box-shadow: 10px 25px 25px black;
 }
 
 .home-socials-container {
@@ -68,7 +72,7 @@
   transition: ease 0.3s;
 }
 
-#element {
+#home-msg-mission {
   font-size: 2.8vw;
 }
 
@@ -94,7 +98,7 @@
     margin: 0;
   }
 
-  #element {
+  #home-msg-mission {
     font-size: 5.5vw;
   }
 

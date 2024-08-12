@@ -54,7 +54,6 @@
   <body>
     <img
       id="background"
-      src="/assets/images/background.jpg"
       src="https://images.unsplash.com/photo-1479669732031-affb2ce2d265?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       alt="background"
       loading="eager"
@@ -138,8 +137,8 @@
     <header id="home">
       <div class="home-msg">
         <p>Hi there!</p>
-        <p>I'm Aakash Kalmady.</p>
-        <span id="element"> </span>
+        <p>I'm Aakash Kalmady</p>
+        <span id="home-msg-mission"> </span>
         <div class="home-socials-container">
           <a href="https://www.linkedin.com/in/aakashkalmady/" target="_blank"
             ><img src="/assets/icons/linkedin.svg" alt="My LinkedIn"
@@ -156,6 +155,9 @@
             ><img src="/assets/icons/youtube.svg" alt="My YouTube"
           /></a>
         </div>
+        <button class="contact-btn" onclick="scrollToContact()">
+          GET IN TOUCH
+        </button>
       </div>
       <div class="home-portrait">
         <img src="/assets/images/headshot.jpeg" alt="Me" loading="eager" />
@@ -176,8 +178,8 @@
                 computer engineering. I am heavily interested in tech, primarily
                 the fields of machine learning, and mathematics. I am pursuing a
                 career at the intersection of robotics with engineering. In my
-                spare time, I like to lift, travel, dance, spend time with my
-                family and friends, and develop my coding skills!
+                spare time, I like to work out, travel, dance, spend time with
+                my family and friends, and develop my coding skills!
               </p>
               <img src="/assets/icons/umd.png" alt="UMD" />
             </div>
@@ -255,7 +257,6 @@
                 <h2>Get In Touch</h2>
                 <p>Contact Me.</p>
                 <p style="color: rgb(165, 165, 165)">arkalmady@gmail.com</p>
-                <p style="color: rgb(165, 165, 165)">(484)-796-3788</p>
               </div>
             </div>
             <div class="contact-form">
@@ -332,9 +333,7 @@
                     required
                   ></textarea>
                 </div>
-                <button class="contact-btn" name="submit">
-                  <span></span>SEND MESSAGE
-                </button>
+                <button class="contact-btn" name="submit">SEND MESSAGE</button>
               </form>
             </div>
           </div>
@@ -347,7 +346,7 @@
     <script src="/assets/index.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed("#element", {
+      var typed = new Typed("#home-msg-mission", {
         strings: [
           'Software <span style="color:rgb(237, 181, 0);">Developer</span>.',
         ],

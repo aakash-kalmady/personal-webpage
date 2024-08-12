@@ -173,12 +173,6 @@
   #navbar {
     padding-left: 10px;
     padding-right: 10px;
-    border: none;
-  }
-
-  .scroll-icon-container,
-  .scroll-icon-container-scrolled {
-    border: none;
   }
 
   .navbar-container {
