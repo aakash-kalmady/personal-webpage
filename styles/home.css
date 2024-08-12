@@ -45,33 +45,6 @@
   box-shadow: 10px 25px 25px black;
 }
 
-.home-socials-container {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-shrink: none;
-  margin-top: 10px;
-}
-
-.home-socials-container a {
-  width: min(6vw, 60px);
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  cursor: default;
-}
-
-.home-socials-container a img:hover {
-  filter: brightness(100%);
-  cursor: pointer;
-}
-
-.home-socials-container a img {
-  width: 60%;
-  filter: brightness(80%);
-  transition: ease 0.3s;
-}
-
 #home-msg-mission {
   font-size: 2.8vw;
 }
