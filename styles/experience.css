@@ -4,4 +4,5 @@
   text-align: left;
   background-image: linear-gradient(rgb(35, 0, 99), black);
   font-size: min(2.5vw, 2rem);
+  height: 500px;
 }

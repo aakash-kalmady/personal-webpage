@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   height: 80px;
-  background-color: rgb(28, 28, 28);
+  background-color: rgb(27, 27, 27);
   z-index: 100;
   padding-left: 80px;
   color: white;
@@ -20,29 +20,15 @@
 .navbar-container-scrolled {
   position: fixed;
   top: 0;
-  background-color: rgba(20, 20, 20, 0.6);
 }
 
-.navbar-container-scrolled:hover #scroll-icon-container,
-.navbar-container-scrolled:hover #signature-container {
-  background-color: rgb(20, 20, 20);
-}
-
-.navbar-container-scrolled:hover #navbar {
-  background-color: rgb(27, 27, 27);
-}
-
-.signature-container,
-.signature-container-scrolled {
+.signature-container {
+  background-color: rgb(30, 30, 30);
   display: flex;
   width: 25vw;
   justify-content: center;
   align-items: center;
   transition: background-color 0.25s;
-}
-
-.signature-container {
-  background-color: rgb(20, 20, 20);
 }
 
 .signature {
@@ -62,11 +48,9 @@
   align-items: center;
   padding: 0 20px 0 20px;
   border-right: 1px rgb(80, 80, 80) solid;
-  transition: background-color 0.25s;
 }
 
-#navbar a,
-#navbar-scrolled a {
+#navbar a {
   position: relative;
   color: gray;
   text-decoration: none;
@@ -76,8 +60,7 @@
   transition: color 0.4s;
 }
 
-#navbar span,
-#navbar-scrolled span {
+#navbar span {
   position: absolute;
   left: 0;
   right: 0;
@@ -88,18 +71,15 @@
   transition: width 0.3s;
 }
 
-#navbar a:hover,
-#navbar-scrolled a:hover {
+#navbar a:hover {
   color: rgb(237, 181, 0);
 }
 
-#navbar a:hover span,
-#navbar-scrolled a:hover span {
+#navbar a:hover span {
   width: 100%;
 }
 
-.scroll-icon-container,
-.scroll-icon-container-scrolled {
+.scroll-icon-container {
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
@@ -111,17 +91,7 @@
   border-right: 1px rgb(80, 80, 80) solid;
   color: gray;
   text-wrap: nowrap;
-  transition: background-color 0.25s;
-}
-
-.scroll-icon-container {
-  background-color: rgb(20, 20, 20);
-}
-
-.signature-container-scrolled,
-.scroll-icon-container-scrolled,
-.navbar-container-scrolled #navbar {
-  background-color: rgba(20, 20, 20, 0.6);
+  background-color: rgb(30, 30, 30);
 }
 
 .mouse-icon {
@@ -170,23 +140,17 @@
     height: 50px;
   }
 
+  .signature-container,
+  .scroll-icon-container,
+  .navbar-container-scrolled,
+  .navbar-container,
+  #navbar {
+    background-color: rgb(35, 35, 35);
+    border: none;
+  }
+
   #navbar {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .navbar-container {
-    background-color: rgb(35, 35, 35);
-  }
-
-  .scroll-icon-container,
-  .signature-container {
-    background-color: rgb(35, 35, 35);
-  }
-
-  .navbar-container-scrolled:hover #scroll-icon-container,
-  .navbar-container-scrolled:hover #signature-container,
-  .navbar-container-scrolled:hover #navbar {
-    background-color: rgb(35, 35, 35);
   }
 }
