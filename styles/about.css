@@ -2,7 +2,7 @@
   position: relative;
   padding: 30px;
   font-family: DM Sans, Arial, sans-serif;
-  background-image: linear-gradient(rgb(9, 13, 25), rgb(35, 0, 99));
+  background-image: linear-gradient(rgb(9, 13, 25), rgb(19, 0, 55));
 }
 
 .about-top {
@@ -15,7 +15,9 @@
 }
 
 .about-portrait img {
-  width: 40vw;
+  width: 45vw;
+  height: 100%;
+  object-fit: cover;
   border-radius: 15px;
 }
 

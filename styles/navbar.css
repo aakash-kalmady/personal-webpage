@@ -106,7 +106,7 @@
   flex-shrink: 0;
 }
 
-#scroll-wheel {
+.scroll-wheel {
   width: 4px;
   height: 10px;
   background-color: rgb(237, 181, 0);
@@ -118,10 +118,10 @@
 
 @keyframes scroll-animation {
   0% {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
   }
   25% {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
   }
   90% {
     transform: translateY(4px);
@@ -152,5 +152,16 @@
   #navbar {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .mouse-icon {
+    width: 15px;
+    height: 22.5px;
+    border-radius: 8px;
+  }
+
+  .scroll-wheel {
+    height: 7.5px;
+    width: 3px;
   }
 }

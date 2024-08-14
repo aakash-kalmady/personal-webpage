@@ -76,7 +76,7 @@
   font-family: Titillium Web, Arial, sans-serif;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.25s, border-color 0.25s;
+  transition: background-color 0.2s, border-color 0.2s;
 }
 
 .contact-btn:hover {
