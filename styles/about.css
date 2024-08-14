@@ -11,12 +11,11 @@
 }
 .about-desc {
   margin-left: 3vw;
-  font-size: min(2.5vw, 2rem);
   text-align: left;
 }
 
 .about-portrait img {
-  width: 45vw;
+  width: 40vw;
   border-radius: 15px;
 }
 
@@ -38,6 +37,7 @@
 
 #about p {
   margin-bottom: 10px;
+  font-size: min(2.8vw, 2rem);
 }
 
 @media (max-width: 1000px) {
