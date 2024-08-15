@@ -31,7 +31,9 @@
   flex-shrink: 0;
   text-wrap: nowrap;
   font-size: 3vw;
+  font-weight: bold;
 }
+
 .home-portrait {
   display: flex;
   align-items: center;
@@ -40,7 +42,7 @@
 .home-portrait img {
   width: 40vw;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 20px;
   image-rendering: optimizeSpeed;
   box-shadow: 10px 25px 25px black;
 }
