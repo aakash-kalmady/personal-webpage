@@ -91,7 +91,8 @@
   border-right: 1px rgb(80, 80, 80) solid;
   color: gray;
   text-wrap: nowrap;
-  background-color: rgb(30, 30, 30);
+
+  /*background-color: rgb(30, 30, 30);*/
 }
 
 .mouse-icon {

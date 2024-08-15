@@ -14,7 +14,7 @@ main {
 .content {
   margin-left: 80px;
   flex: 1;
-  background-color: white;
+  background-color: black;
 }
 
 @media (max-width: 600px) {
