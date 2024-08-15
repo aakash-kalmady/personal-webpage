@@ -31,7 +31,7 @@
   flex-shrink: 0;
   text-wrap: nowrap;
   font-size: 3vw;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .home-portrait {
@@ -44,7 +44,7 @@
   object-fit: cover;
   border-radius: 20px;
   image-rendering: optimizeSpeed;
-  box-shadow: 10px 25px 25px black;
+  box-shadow: 10px 15px 15px black;
 }
 
 #home-msg-mission {

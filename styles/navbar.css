@@ -67,12 +67,12 @@
   width: 0;
   bottom: -4px;
   height: 2px;
-  background-color: rgb(237, 181, 0);
+  background-color: rgb(250, 201, 33);
   transition: width 0.25s;
 }
 
 #navbar a:hover {
-  color: rgb(237, 181, 0);
+  color: rgb(250, 201, 33);
 }
 
 #navbar a:hover span {
@@ -109,7 +109,7 @@
 .scroll-wheel {
   width: 4px;
   height: 10px;
-  background-color: rgb(237, 181, 0);
+  background-color: rgb(250, 201, 33);
   border-radius: 2px;
   animation-name: scroll-animation;
   animation-duration: 2s;

@@ -6,13 +6,13 @@
   width: 500px;
   color: white;
   z-index: 150;
-  transition: 0.2s ease-in-out;
   display: flex;
+  transition: left 0.25s cubic-bezier(0.755, 0.05, 0.755, 0.06);
 }
 
 .menu-sidebar-background {
   width: 80px;
-  background-color: rgb(43, 43, 43);
+  background-color: rgb(15, 15, 15);
   height: 100%;
 }
 

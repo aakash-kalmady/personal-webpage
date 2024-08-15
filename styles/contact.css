@@ -68,7 +68,7 @@
 .contact-btn {
   margin-top: 20px;
   color: white;
-  background-color: rgb(237, 181, 0);
+  background-color: rgb(250, 201, 33);
   border: 1px rgba(0, 0, 0, 0) solid;
   border-radius: 4px;
   padding: 15px 40px 15px 40px;
@@ -91,7 +91,7 @@
 
 .contact-label-bar {
   width: 5px;
-  background-image: linear-gradient(rgb(237, 181, 0), rgb(15, 15, 15));
+  background-image: linear-gradient(rgb(250, 201, 33), rgb(15, 15, 15));
   margin-right: 15px;
   border-radius: 2px;
 }

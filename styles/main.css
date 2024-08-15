@@ -7,19 +7,19 @@ main {
   background: none;
   color: white;
   z-index: 0;
-  background-color: black;
+  background-color: rgb(10, 10, 10);
   font-family: DM Sans, Arial, sans-serif;
 }
 
 .content {
   margin-left: 80px;
   flex: 1;
-  background-color: rgb(9, 13, 25);
+  background-color: white;
 }
 
 @media (max-width: 600px) {
   .content {
     margin-left: 0px;
-    border-top: 2px rgb(237, 181, 0) solid;
+    border-top: 2px rgb(250, 201, 33) solid;
   }
 }

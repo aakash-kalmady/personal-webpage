@@ -21,8 +21,9 @@ hamMenu.addEventListener("click", toggleMenu);
 
 //function to shift nav bar depending on how far one has scrolled and parallax for background
 window.addEventListener("scroll", () => {
-  var height;
-  background.style.top = -window.scrollY * 0.5 + "px";
+  var height,
+    parallax = window.scrollY;
+  background.style.top = -parallax * 0.15 + "px";
   if (window.innerWidth < 625) {
     height = homeMenu.offsetHeight - 75;
   } else {

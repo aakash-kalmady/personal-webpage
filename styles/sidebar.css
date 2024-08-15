@@ -11,7 +11,7 @@
   transition: background-color 0.5s;
   color: white;
   z-index: 200;
-  background-color: rgba(27, 27, 27, 0.6);
+  background-color: rgba(50, 50, 50, 0.4);
   font-family: Titillium Web, sans-serif;
 }
 
@@ -53,7 +53,7 @@
 
 .ham-menu-bar {
   height: 2px;
-  background-color: rgb(237, 181, 0);
+  background-color: rgb(250, 201, 33);
   margin-bottom: 6px;
   transition: transform 0.15s, width 0.2s, opacity 0.15s;
 }
@@ -137,7 +137,7 @@
   align-items: center;
   width: 100%;
   height: 80px;
-  background-color: rgb(237, 181, 0);
+  background-color: rgb(250, 201, 33);
   cursor: pointer;
 }
 
