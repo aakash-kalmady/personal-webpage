@@ -61,10 +61,9 @@ function scrollToContact() {
 }
 
 function delayLoad() {
-  setTimeout(bruh, 500);
+  setTimeout(bruh, 1);
 }
 
 function bruh() {
-  contentBlocker.style.background = "none";
-  contentBlocker.style.color = "rgba(0,0,0,0)";
+  contentBlocker.style.opacity = 0;
 }
