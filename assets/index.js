@@ -60,10 +60,10 @@ function scrollToContact() {
   contact.scrollIntoView();
 }
 
-function delayLoad() {
-  setTimeout(bruh, 1);
+function loading() {
+  setTimeout(removeBlocker, 100);
 }
 
-function bruh() {
+function removeBlocker() {
   contentBlocker.style.opacity = 0;
 }
