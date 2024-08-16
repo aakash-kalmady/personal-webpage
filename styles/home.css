@@ -8,7 +8,6 @@
   object-position: 75%;
   z-index: -5;
   filter: brightness(70%) sepia(60%) opacity(70%);
-  image-rendering: optimizeSpeed;
 }
 
 #home {
@@ -43,7 +42,6 @@
   width: 40vw;
   object-fit: cover;
   border-radius: 20px;
-  image-rendering: optimizeSpeed;
   box-shadow: 10px 15px 15px black;
 }
 

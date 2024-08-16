@@ -7,7 +7,7 @@
   color: white;
   z-index: 150;
   display: flex;
-  transition: left 0.25s cubic-bezier(0.755, 0.05, 0.755, 0.06);
+  transition: ease 0.25s;
 }
 
 .menu-sidebar-background {

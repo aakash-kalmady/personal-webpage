@@ -5,6 +5,7 @@ let navbar = document.getElementById("navbar-container");
 let page = document.getElementById("main");
 let background = document.getElementById("background");
 let homeMenu = document.getElementById("home");
+let contentBlocker = document.getElementById("content-blocker");
 
 //section elements
 let about = document.getElementById("about");
@@ -57,4 +58,13 @@ function scrollToGallery() {
 
 function scrollToContact() {
   contact.scrollIntoView();
+}
+
+function delayLoad() {
+  setTimeout(bruh, 500);
+}
+
+function bruh() {
+  contentBlocker.style.background = "none";
+  contentBlocker.style.color = "rgba(0,0,0,0)";
 }
