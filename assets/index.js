@@ -60,10 +60,6 @@ function scrollToContact() {
   contact.scrollIntoView();
 }
 
-function loading() {
-  setTimeout(removeBlocker, 100);
-}
-
 function removeBlocker() {
   contentBlocker.style.opacity = 0;
 }
