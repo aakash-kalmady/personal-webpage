@@ -48,7 +48,7 @@
     <title>Aakash Kalmady's Website</title>
     <meta
       name="description"
-      content="Aakash Kalmady's personal website. Learn more about me, my work, and my passions."
+      content="My personal website. Learn more about me, my work, and my passions."
     />
   </head>
   <body onload="removeBlocker()">
@@ -133,15 +133,18 @@
         <a onclick="scrollToGallery()">GALLERY<span></span></a>
         <a onclick="scrollToContact()">CONTACT<span></span></a>
       </div>
-      <div
-        onClick="window.location.reload();"
-        id="signature-container"
-        class="signature-container"
-      >
+      <div id="signature-container" class="signature-container">
         <img
           class="signature"
           src="/assets/icons/signature.png"
           alt="Signature"
+          loading="eager"
+        />
+        <img
+          onClick="window.location.reload();"
+          class="logo"
+          src="/assets/icons/logo.png"
+          alt="Logo"
           loading="eager"
         />
       </div>

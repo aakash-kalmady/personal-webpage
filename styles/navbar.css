@@ -33,10 +33,10 @@
 
 .signature {
   width: 100%;
-  max-height: 60px;
-  object-fit: fill;
+  height: 60px;
+  object-fit: contain;
   object-position: center;
-  filter: brightness(50%);
+  filter: brightness(70%);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -117,6 +117,14 @@
   animation-iteration-count: infinite;
 }
 
+.logo {
+  display: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
 @keyframes scroll-animation {
   0% {
     transform: translateY(-4px);
@@ -168,5 +176,13 @@
   .scroll-wheel {
     height: 6px;
     width: 3px;
+  }
+
+  .signature {
+    display: none;
+  }
+
+  .logo {
+    display: block;
   }
 }

@@ -1,26 +1,26 @@
-let hamMenu = document.getElementById("ham-menu");
-let menu = document.getElementById("menu-container");
-let sidebar = document.getElementById("sidebar");
-let navbar = document.getElementById("navbar-container");
-let page = document.getElementById("main");
+// general HTML elements
 let background = document.getElementById("background");
 let homeMenu = document.getElementById("home");
-let contentBlocker = document.getElementById("content-blocker");
-
-//section elements
+let page = document.getElementById("main");
 let about = document.getElementById("about");
 let experience = document.getElementById("experience");
 let gallery = document.getElementById("gallery");
 let contact = document.getElementById("contact");
 
-function toggleMenu() {
+// specific HTML elements
+let hamMenu = document.getElementById("ham-menu");
+let menu = document.getElementById("menu-container");
+let sidebar = document.getElementById("sidebar");
+let navbar = document.getElementById("navbar-container");
+let contentBlocker = document.getElementById("content-blocker");
+
+// click to toggle hamburger menu
+hamMenu.addEventListener("click", () => {
   menu.classList.toggle("menu-container-toggled");
   hamMenu.classList.toggle("ham-menu-toggled");
-}
+});
 
-hamMenu.addEventListener("click", toggleMenu);
-
-//function to shift nav bar depending on how far one has scrolled and parallax for background
+// stick navbar to top of page once scrolled, and parallax for background
 window.addEventListener("scroll", () => {
   var height,
     parallax = window.scrollY;
@@ -30,7 +30,6 @@ window.addEventListener("scroll", () => {
   } else {
     height = window.innerHeight - 80;
   }
-  console.log(height);
   if (window.scrollY > height) {
     navbar.className = "navbar-container-scrolled";
   } else {
@@ -38,28 +37,24 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// scroll to section functions
 function scrollToHome() {
   window.scroll({
     top: 0,
   });
 }
-
 function scrollToAbout() {
   about.scrollIntoView();
 }
-
 function scrollToExperience() {
   experience.scrollIntoView();
 }
-
 function scrollToGallery() {
   gallery.scrollIntoView();
 }
-
 function scrollToContact() {
   contact.scrollIntoView();
 }
-
 function removeBlocker() {
   contentBlocker.style.opacity = 0;
 }
