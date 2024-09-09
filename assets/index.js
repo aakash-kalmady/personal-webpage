@@ -46,9 +46,7 @@ hamMenu.addEventListener("click", () => {
 
 // stick navbar to top of window if scrolled down
 function navbarController() {
-  var height,
-    parallax = window.scrollY;
-  background.style.top = -parallax * 0.15 + "px";
+  var height;
   if (window.innerWidth < 625) {
     height = homeMenu.offsetHeight - 75;
   } else {
