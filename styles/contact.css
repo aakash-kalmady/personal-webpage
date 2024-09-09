@@ -4,6 +4,10 @@
   justify-content: center;
 }
 
+#contact .reveal {
+  width: 100%;
+}
+
 #contact h2 {
   text-wrap: nowrap;
 }
