@@ -46,7 +46,7 @@ hamMenu.addEventListener("click", () => {
 
 // stick navbar to top of window if scrolled down
 function navbarController() {
-  var height;
+  let height;
   if (window.innerWidth < 625) {
     height = homeMenu.offsetHeight - 75;
   } else {
@@ -63,10 +63,10 @@ function navbarController() {
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var revealtop = reveals[i].getBoundingClientRect().top;
-    var revealpoint = 150;
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let revealtop = reveals[i].getBoundingClientRect().top;
+    let revealpoint = 150;
 
     if (revealtop < windowHeight - revealpoint) {
       reveals[i].classList.add("active-reveal");
