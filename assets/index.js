@@ -12,7 +12,7 @@ let hamMenu = document.getElementById("ham-menu");
 let menu = document.getElementById("menu-container");
 let sidebar = document.getElementById("sidebar");
 let navbar = document.getElementById("navbar-container");
-let contentBlocker = document.getElementById("content-blocker");
+// let contentBlocker = document.getElementById("content-blocker");
 
 // scroll to section functions
 function scrollToHome() {
@@ -33,10 +33,10 @@ function scrollToContact() {
   contact.scrollIntoView();
 }
 
-// loading screen
-function removeBlocker() {
-  contentBlocker.style.opacity = 0;
-}
+// // loading screen
+// function removeBlocker() {
+//   contentBlocker.style.opacity = 0;
+// }
 
 // click to toggle hamburger menu
 hamMenu.addEventListener("click", () => {
