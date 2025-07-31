@@ -6,8 +6,9 @@
 
 .about-top {
   display: flex;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
+
 .about-desc {
   margin-left: 3vw;
   text-align: left;
@@ -37,5 +38,22 @@
 
 #about p {
   margin-bottom: 10px;
-  font-size: min(2.2vw, 2rem);
+  font-size: min(2.2vw, 2.5rem);
+}
+
+@media (max-width: 900px) {
+  .about-top {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-desc {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about-portrait img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
 }
